@@ -316,6 +316,15 @@ textarea.form-control { resize: vertical; font-weight: 100; color: #919191; bord
 
 .slide__arrow-next { position: absolute; left: auto; right: 11px; background: url('../img/icons-s3cc91cbf99.png') 0 -1051px no-repeat; width: 30px; height: 32px; }
 
+.check__map img { width: 100%; }
+
+.check__availability { padding: 20px 30px; border-top: 5px solid #5299f4; background-color: #5199f3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78c8f9), color-stop(100%, #1e59ed)); background-image: -webkit-linear-gradient(#78c8f9, #1e59ed); background-image: -moz-linear-gradient(#78c8f9, #1e59ed); background-image: -o-linear-gradient(#78c8f9, #1e59ed); background-image: linear-gradient(#78c8f9, #1e59ed); }
+.check__availability .h2 { margin: 0; font-weight: 900; font-size: 30px; color: white; }
+.check__availability .check__availability-note { font-weight: 900; color: #ffc000; }
+.check__availability .check__availability-price { margin: 0 0 15px; color: white; }
+
+.check__send { padding: 30px; background: #5299f4; }
+
 .ico { display: inline-block; vertical-align: middle; }
 
 .i-eng { background: url('../img/icons-s3cc91cbf99.png') 0 -1273px no-repeat; width: 16px; height: 11px; }

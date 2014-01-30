@@ -13,14 +13,12 @@
 	<link rel="stylesheet" media="screen" href="css/base.css" >
 	<link rel="stylesheet" media="screen" href="css/clean.css" >
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,100,900,900italic,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,100,900,300' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/respond.js"></script>
 	<script src="js/cycle.js"></script>
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/i18n/jquery.ui.datepicker-da.min.js"></script>
 
@@ -35,7 +33,7 @@
 			  }
 			  var map = new google.maps.Map(document.getElementById('map-canvas'),
 			                                mapOptions);
-			  map.disableScrollWheelZoom();
+
 			  var myLatLng = new google.maps.LatLng(54.654811, 25.125491);
 			  var beachMarker = new google.maps.Marker({
 			      position: myLatLng,
@@ -116,7 +114,7 @@
 							<div class="wrap wrap_mod">
 								<div class="check">
 									<div class="row">
-										<div class="col-md-9">
+										<div class="col-md-8">
 											<div class="building">
 		  									<div class="building__gallery">
 													<div class="building__gallery-wrap">
@@ -182,8 +180,38 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-md-3">
-											222 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, necessitatibus, iste laborum maiores quod ut saepe eum aperiam iure commodi. Nesciunt, dolore, ad accusantium modi blanditiis provident sunt perspiciatis quod quae odio voluptas iste quaerat. Tempora sequi iusto magnam exercitationem possimus ex reprehenderit vel repudiandae. Soluta, provident cumque voluptatem sed!
+										<div class="col-md-4">
+											<div class="check">
+												<div class="check__map">
+													<img src="img/map.jpg" alt="">
+												</div>
+												<div class="check__availability">
+													<h2 class="h2">Check availability</h2>
+													<p class="check__availability-note"><strong>or view full calendar</strong></p>
+													<h3 class="check__availability-price">From <strong>€120</strong> per night</h3>
+													<div class="row">
+														<div class="col-md-6 col-sm-6 col-xs-6">
+				  				  					<div class="input-group">
+				  		  					      <input type="text" class="form-control" placeholder="Arrival">
+				  		  					      <span class="input-group-addon">
+				  		  					        <input type="checkbox">
+				  		  					      </span>
+				  		  					    </div><!-- /input-group -->
+				  				  				</div>
+														<div class="col-md-6 col-sm-6 col-xs-6">
+				  				  					<div class="input-group">
+				  		  					      <input type="text" class="form-control" placeholder="Departure">
+				  		  					      <span class="input-group-addon">
+				  		  					        <input type="checkbox">
+				  		  					      </span>
+				  		  					    </div><!-- /input-group -->
+				  				  				</div>
+													</div>
+												</div>
+												<div class="check__send">
+													<a href="#" class="btn btn-block btn_warning">Send enquiry</a>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -329,18 +357,18 @@
   				  			<div class="row">
   				  				<div class="col-md-6 col-sm-6 col-xs-6">
   				  					<div class="input-group">
+  		  					      <input type="text" class="form-control">
   		  					      <span class="input-group-addon">
   		  					        <input type="checkbox">
   		  					      </span>
-  		  					      <input type="text" class="form-control">
   		  					    </div><!-- /input-group -->
   				  				</div>
   				  				<div class="col-md-6 col-sm-6 col-xs-6">
   				  					<div class="input-group">
+  		  					      <input type="text" class="form-control">
   		  					      <span class="input-group-addon">
   		  					        <input type="checkbox">
   		  					      </span>
-  		  					      <input type="text" class="form-control">
   		  					    </div><!-- /input-group -->
   				  				</div>
   				  			</div>

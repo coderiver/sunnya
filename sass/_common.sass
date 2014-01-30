@@ -1,49 +1,759 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
+/*-------------------------  -------------------------*/
+
+/*------------------------- general -------------------------*/
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
+	position: relative
+	font-size: 14px 
 	line-height: 1.4
+	font-family: "Roboto", sans-serif !important
+	background: #f0eee8 !important
+.out
+	padding-top: 9px
+	position: relative
+.out__in
+	position: relative
+	z-index: 2
+.bg
+	width: 100%
+	height: 845px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background: url(../img/icons/bg.png) #f0eee8
+	+cover
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	font-family: "Roboto", sans-serif !important
+.h2
+	font-size: 24px
+	font-weight: 100
+	color: #434343  
+.wrap
+	padding: 20px 25px
+	margin-bottom: 19px
+	border-top: 6px solid #5299f4 
+	background: #FFF
+	@include border-radius(4px)
+	color: #434343
+	+clr
+	.h2
+		font-weight: 100
+		font-size: 22px
+		color: #434343 
+		margin: 0 0 15px
+.wrap_mod
 
+	border-top: none
+	@include border-radius(0px) 
+.wrap__bottom
+	+clr
+	.wrap__rating
+		float: left
+	.wrap__more
+		float: right
+.wrap__more
+	color: #DEA907
+	font-weight: 800
+	&:hover
+		color: #DEA907
+/*------------------------- header & topper-------------------------*/
+.rating-wrap
+	p
+		display: inline-block
+	.rating
+		display: inline-block
+.header-wrap__in
+	background: #FFF
 
-// common blocks
+.topper
+	.topper__in
+		margin: 0
+		background: #5299F4
+		color: #fff
+		+border-radius(3px 3px 0 0)
+	.h3
+		font-weight: 400
+		font-size: 22px 
+.header
+
+	.header__in
+		padding: 15px 0
+		margin: 0 0 16px
+		background: #FFF
+		+border-radius(0px 0px 3px 3px)
+/*------------------------- footer -------------------------*/
+.footer
+	background: #FFF
+	position: relative
+	z-index: 666
+	.logo
+		float: left
+		position: absolute
+		top: 15px
+		left: 15px
+	.copy 
+		text-align: right
+		line-height: 1
+		color: #5C5C5C 
+		p
+			margin-bottom: 8px
+		.copy__privacy 
+			color: #ffde00
+			font-weight: 800
+.footer__item
+	padding: 5px 10px 36px
+	border-top: 5px solid #5299F4
+	@include r(step5)
+		&.footer__item_l
+			text-align: left
+	@include r(step4)
+		&.footer__item_l
+			text-align: left
+		.btn
+			&.btn_blue
+				padding: 6px 12px
+				font-size: 14px
+		&.footer__item_r
+			text-align: right
+			.social
+				display: inline-block
+				li
+					margin-left: 3px
+					&:first-child
+						margin-left: 0
+	@include r(step3)
+		text-align: center
+		.social
+			display: inline-block
+		.h2
+			font-size: 16px
+	@include r(step2)
+		text-align: center
+		.social
+			display: inline-block
+		.h2
+			font-size: 18px
+	@include r(step1)
+		text-align: left
+		.h2
+			font-size: 20px
+	.h2
+		margin: 20px 0
+		font-weight: 100
+		color: #434343
+	.social
+		margin-top: 3px
+.copyright
+	padding: 25px
+	border-top: 1px solid #CACACA
+	font-size: 12px
+.logo
+	display: inline-block
+	+s(logo)
+	+hidetext
+/*------------------------- block -------------------------*/
+// some btn
+.btn-wrap
+	margin-top: 24px
+	font-size: 0
+	text-align: right
+	@include r(step3)
+		margin-bottom: 10px
+		text-align: center
+.btn
+	&.btn_custum
+		width: 42px
+		padding: 8px 0px
+		margin-left: 7px
+		display: inline-block
+		text-align: center
+		+border-radius(5px)
+		color: #FFF 
+	&.btn_dark
+		background: #313131
+		&:hover, &:focus
+			// background: #3D3D3D 
+			color: #fff
+			text-decoration: none
+	&.btn_blue
+		padding: 13px 32px
+		border: 1px solid #7bb3cb
+		@include border-radius(4px)
+		background-color: #5199f3
+		+g(#78c8f9, #2d6bef)
+		color: #FFF
+		font-size: 18px
+		font-weight: 800 
+		@include text-shadow(0 -1px 0 #000)
+		&:hover
+			color: #fff
+	&.btn_warning
+		padding: 13px 32px
+		border: 1px solid #eec10b
+		@include border-radius(4px)
+		background-color: #5199f3
+		+g(#ed9e0a, #f9db1c)
+		color: #FFF
+		font-size: 22px
+		font-weight: 800 
+		@include text-shadow(0 -1px 0 rgba(239,168,13,.75))
+		&:hover
+			color: #fff
+		&:active
+			outline: 0
+			+g(#f9db1c, #ed9e0a)
+			@include box-shadow(inset 0 3px 5px rgba(0,0,0,0.125))
+// dropdown
+.dropdown
+	&.dropdown_lang
+		display: inline-block
+		.dropdown-menu
+			background: #313131
+			margin: -4px 0 0
+			right: 0px
+			left: initial
+			border: none
+			+border-radius(3px 0 3px 3px)
+			li
+				margin-top: 5px
+				&:first-child
+					margin-top: 0
+				.ico
+					margin-right: 10px
+				a
+					color: #FFF
+					text-align: left
+					&:hover
+						background: #444242 
+	&.open
+		+border-radius(3px 3px 0px 3px)
+// owners
+.owners
+	position: relative
+	font-size: 0
+	+clr
+	&:after
+		content: ""
+		width: 1px
+		height: 80px
+		background: #ececec
+		position: absolute
+		right: 0
+		top: 0
+		+box-shadow(1px 0 0 #ddd)
+	@include r(step3)
+		margin-left: -80px
+		margin-bottom: 10px
+		text-align: center
+		&:after
+			content: none
+	@include r(step2)
+		&:after
+			right: -6px
+	@include r(step1)
+		&:after
+			right: 0
+.owners__media
+	width: 80px
+	height: 80px
+	overflow: hidden
+	display: inline-block
+	vertical-align: top
+	img
+		max-width: 100%
+.owners__link
+	display: inline-block
+	margin-left: 17px
+	font-size: 18px
+	color: #2A2A2A
+	font-weight: bold
+	vertical-align: top
+	&:hover
+		color: #2A2A2A
+.owners__info
+	margin-left: 12px
+	display: inline-block
+	font-size: 12px
+.owners_mod
+	margin-bottom: 12px
+	padding: 9px
+	background: #EBEBEB
+	+border-radius(4px) 
+	&:after
+		content: none
+	.owners__media
+		width: 80px
+		height: 67px
+	.owners__link
+		margin-left: 0
+// call
+.call
+	font-weight: bold
+	text-align: center
+	font-size: 18px
+	line-height: 1
+	position: relative
+	color: #434343
+	&:after
+		content: ""
+		+s(call-bg)
+		position: absolute
+		top: 0
+		right: 0
+	@include r(step3)
+		text-align: center
+		&:after
+			content: none
+	@include r(step2)
+		&:after
+			content: none
+	@include r(step1)
+		&:after
+			content: ""
+.call__num
+	font-size: 24px
+	font-weight: 800
+.call__now
+	color: #000 
+.call_mod
+	font-size: 16px
+	text-align: left
+	font-weight: normal
+	strong
+		font-weight: 800 
+	&:after
+		content: none
+// send
+.send
+	font-weight: bold 
+	font-size: 18px
+	color: #000 
+	text-align: center
+// social
+.social
+	font-size: 0
+	overflow: hidden
+	.ico
+		+transition(.2s)
+		&:hover
+			+opacity(0.8)
+			+transition(.2s)
+	li
+		margin-left: 9px
+		float: left
+		overflow: hidden
+		&:first-child
+			margin-left: 0
+	.fb
+		+s(fb)
+	.tw
+		+s(tw)
+	.pt
+		+s(pt)
+// translate
+.translate
+	height: 26px
+	line-height: 26px
+	display: inline-block
+	+border-radius(4px)
+	background: #efefef
+	border: 1px solid #969696
+	color: #434343
+	font-weight: bold
+	padding: 0px 20px 0px 32px
+	position: relative
+	text-decoration: none
+	+box
+	&:before
+		content: ""
+		+s(i-g2)
+		position: absolute
+		left: 0
+		top: 0
+	&:hover
+		text-decoration: none
+		color: #434343
+// widget1
+.widget1
+	min-height: 209px
+	p
+		margin-bottom: 20px
+.widget2
+	min-height: 771px
+// more
+.more
+	color: #ffc000
+	font-weight: 800
+	&:hover
+		color: #ffc000
+		text-decoration: underline
+// description
+.description
+
+.description__top
+	margin-bottom: 10px
+	overflow: hidden
+.description__rating
+	p
+		margin-bottom: 5px
+// about
+.about
+.about__item
+	margin-top: 25px
+	p
+		line-height: 1
+// my-label
+.my-label
+	margin-bottom: 10px
+// input-group_mod-list
+.input-group_mod-list
+	width: 100%
+	input
+		border-color: #949494
+		border-bottom-left-radius: 4px !important
+		border-top-left-radius: 4px !important
+		font-size: 14px
+		font-weight: 100
+		color: #919191 
+		+placeholder
+			font-size: 14px
+			color: #919191 
+			font-weight: 100
+	.arr
+		+s(i-arr)
+	.input-group-btn
+		position: static
+		.btn
+			background: #949494
+		&.open
+			.btn
+				background: #5299F5
+			.arr
+				+transform(rotate(180deg))
+		.dropdown-menu
+			margin: 0
+			left: 0
+			border-color: #b9b9b9
+			li
+				a
+					white-space: normal
+					&:hover
+						background: #5299f5
+						color: #fff
+// input-group_mod
+.input-group_mod
+	width: 100%
+	input
+		border-color: #949494
+		border-bottom-left-radius: 4px !important
+		border-top-left-radius: 4px !important
+		border-top-right-radius: 4px !important
+		border-bottom-right-radius: 4px !important
+		font-size: 14px
+		font-weight: 100
+		color: #919191 
+		+placeholder
+			font-size: 14px
+			color: #919191 
+			font-weight: 100
+	.input-group-addon_mod
+		background: #949494
+		border-color: #949494
+		color: #fff
+		+border-radius(4px 0 0 4px)
+.input-group_mod2
+	input
+		border-bottom-left-radius: 0px !important
+		border-top-left-radius: 0px !important
+		border-top-right-radius: 4px !important
+		border-bottom-right-radius: 4px !important
+.input-group_mini
+	.dropdown-menu
+		min-width: initial
+		right: 0
+textarea.form-control
+	resize: vertical
+	font-weight: 100
+	color: #919191
+	border-color: #949494
+// map
+.map
+.map__item
+	height: 392px
+	margin-bottom: 15px
+.map__meta
+	margin-bottom: 5px
+	+clr
+.map__descr
+	margin: 10px 0 0
+// calendar
+.calendar
+.calendar__meta
+	+clr
+.calendar__switch
+	margin-bottom: 10px
+	clear: both
+	overflow: hidden
+	.calendar__switch-left
+		float: left
+		cursor: pointer
+		.ico
+			+s(i-prew)
+			margin-right: 10px
+	.calendar__switch-right
+		float: right
+		cursor: pointer
+		.ico
+			+s(i-next)
+			margin-left: 10px
+/*-------------------------  datepicker -------------------------*/
+.ui-datepicker-group
+	margin-bottom: 40px
+
+.calendar__cont
+	width: 100%
+	.ui-datepicker
+		&.ui-datepicker-multi
+			width: 100% !important
+			.ui-datepicker-group
+				table
+					width: 100%
+					margin: 0
+.ui-datepicker-multi-2
+	.ui-datepicker-group
+		width: 48%
+		@include r(step6)
+			width: 100%
+		&.ui-datepicker-group-first
+			margin-right: 4%
+			@include r(step6)
+				margin-right: 0
+.ui-datepicker
+	padding: 0
+	.ui-datepicker-next, .ui-datepicker-prev
+		display: none
+	.ui-widget-header
+		padding: 1px 0
+		background: #5299F4
+		border: none
+		+border-radius(3px 3px 0 0)
+	.ui-datepicker-year
+		font-weight: 900
+		font-size: 14px
+	.ui-state-default
+		border: none
+		background: #F3F3F3
+		color: #464646
+		font-size: 14px
+		font-weight: normal
+		text-align: center
+	.ui-state-active
+		background: #F3F3F3 
+.ui-state-unavailable
+	// background: red
+	a
+		background: #f8b8b8 !important
+.ui-widget-content
+	background: #fff 
+	border: none  
+// .ui-datepicker-calendar
+// 	tbody
+// 		tr
+// 			.ui-state-unavailable
+// 				&:first-child
+// 					a
+// 						background: blue !important 
+	thead
+		th
+			background: #f3f3f3
+			border: none
+			font-weight: 900
+			color: #464646
+			// padding: 2em
+.calendar__description
+	+clr
+	li
+		margin-right: 20px
+		float: left
+		position: relative		
+		@include r(step7)
+			margin-bottom: 10px
+		.ico
+			width: 31px
+			height: 31px
+			line-height: 31px
+			margin-right: 10px
+			font-size: 14px
+			color: #313131
+			display: inline-block
+			text-align: center
+			font-style: normal 
+		&.calendar__available
+			.ico
+				background: #F3F3F3
+				border: 1px solid #a4a4a4
+		&.calendar__unavailable
+			.ico
+				background: #ffbfbf
+				border: 1px solid #dcdcdc
+		&.calendar__special
+			font-weight: bold
+			margin-right: 0
+			.ico
+				background: #F3F3F3 
+				border: 1px solid #a4a4a4
+				font-weight: normal
+
+// placeing
+.placeing
+.placeing__meta
+	margin-bottom: 10px
+	+clr
+.placeing__descr 
+	margin: 5px 0 0
+.table
+	margin-bottom: 20px
+	table
+	thead
+		th
+			padding: 6px 15px
+			background: #5299F4
+			color: #fff
+			text-align: center
+		.table__label-first
+			+border-radius(4px 0px 0 0)
+		.table__label-last
+			+border-radius(0px 4px 0 0)
+	tbody
+		tr
+			&:nth-child(2n)
+				td
+					background: #e5e5e5
+		td
+			padding: 7px 15px
+			background: #F3F3F3
+			border-left: 1px solid #fff
+			border-bottom: 1px solid #fff
+			text-align: center
+			font-size: 12px
+			&:first-child
+				border-left: none
+
+// slider 
+.slider
+	padding: 30px 65px 0
+	position: relative
+.slider__switch
+.slider__switch-left, .slider__switch-right
+	cursor: pointer
+	.ico
+		position: absolute
+		top: 50%
+		margin-top: -16px
+.slider__switch-left
+	.ico
+		left: 20px
+		+s(i-prew)
+.slider__switch-right
+	.ico
+		right: 20px
+		+s(i-next)
+.slider__item
+	padding-bottom: 50px
+	overflow: hidden
+.slider__item-in
+	@include r(step3)
+		margin-bottom: 15px
+	@include r(step2)
+		margin-bottom: 15px
+	@include r(step1)
+		margin-bottom: 0px
+.slider__meta
+	margin: 0
+.slider__rate
+	margin: 0 0 5px
+.slider__pager
+	margin: 0 -65px
+	border-top: 1px solid #e9e8e6 
+	padding: 15px 0
+	text-align: center
+	span
+		width: 12px
+		height: 12px
+		margin-right: 5px
+		display: inline-block
+		background: #C7C5BE
+		border: 1px solid transparent
+		+border-radius(50%)
+		font-size: 0
+		cursor: pointer
+		&.cycle-pager-active
+			background: #FFF
+			border: 1px solid #c7c5be
+// check
+.check
+	margin-bottom: 15px
+
+//building
+.building__gallery
+	position: relative
+	// background: #fff
+.building__photo
+	+clr
+	.building__media
+		text-align: center
+		height: 400px
+		img
+			vertical-align: middle
+			text-align: center
+			width: 100%
+			height: 100%
+			display: block
+.building__thumbs
+	position: relative
+	+clr
+	+box
+	text-align: center 
+	.caro
+		width: 80%
+		height: 85px
+		margin: 0 auto
+		overflow: hidden
+		position: relative
+	ul
+		margin: 0
+		position: absolute
+		top: 20px
+		width: 20000em
+		list-style: none
+		li
+			width: 55px
+			height: 45px
+			margin-right: 15px
+			float: left
+			cursor: pointer
+			// background: blue 
+			+opacity(1)
+			&:hover, &.active
+				border-color: #fff
+				background-color: #fff
+				@include opacity(.55)
+			img
+				width: 100%
+				height: 100%
+				vertical-align: middle
+.slide__arrow-prev, .slide__arrow-next
+	position: absolute
+	top: 26px
+	left: 11px
+	padding: 0 5px
+	+box
+	+s(i-prew)
+	cursor: pointer
+	&.disabled
+		+opacity(.5)
+.slide__arrow-next
+	position: absolute
+	left: auto
+	right: 11px
+	+s(i-next)

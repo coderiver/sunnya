@@ -1,0 +1,34 @@
+$step1: 992px
+$step2: 768px
+$step3: 767px
+$step4: 600px
+$step6: 450px
+$step7: 500px
+$step5: 380px
+@mixin r($media:'step1')
+	@if $media == step1
+		@media (min-width: $step1)
+			@content
+
+	@else if $media == step2
+		@media (min-width: $step2)
+			@content
+
+	@else if $media == step3
+		@media only screen and (max-width: $step3)
+			@content
+
+	@else if $media == step4
+		@media only screen and (max-width: $step4)
+			@content
+
+	@else if $media == step5
+		@media only screen and (max-width: $step5)
+			@content
+	@else if $media == step6
+		@media only screen and (max-width: $step6)
+			@content
+
+	@else if $media == step7
+		@media only screen and (max-width: $step7)
+			@content

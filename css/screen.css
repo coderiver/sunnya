@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .owners__info { margin-left: 12px; display: inline-block; font-size: 12px; }
 
 .owners_mod { margin-bottom: 12px; padding: 9px; background: #ebebeb; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+@media only screen and (max-width: 767px) { .owners_mod { margin-left: 0px; } }
 .owners_mod:after { content: none; }
 .owners_mod .owners__media { width: 80px; height: 67px; }
 .owners_mod .owners__link { margin-left: 0; }

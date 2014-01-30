@@ -461,6 +461,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 		border-color: #949494
 		color: #fff
 		+border-radius(4px 0 0 4px)
+.input-group-addon
+	&.input-group-addon_cal
+		width: 44px
+		background: #949494
+		border-color: #949494
+		padding: 6px 12px
+		position: relative
+		&:before
+			content: ""
+			+s(cal)
+			position: absolute
+			margin-top: -10px
+			top: 50%
+			margin-left: -10px
+			left: 50%
 .input-group_mod2
 	input
 		border-bottom-left-radius: 0px !important
@@ -550,9 +565,11 @@ textarea.form-control
 	.ui-state-active
 		background: #F3F3F3 
 .ui-state-unavailable
-	// background: red
 	a
 		background: #f8b8b8 !important
+.ui-state-special
+	a
+		font-weight: bold !important
 .ui-widget-content
 	background: #fff 
 	border: none  

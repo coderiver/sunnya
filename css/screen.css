@@ -344,8 +344,9 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .building__thumbs:after { content: " "; display: table; clear: both; }
 .building__thumbs .caro { width: 80%; height: 85px; margin: 0 auto; overflow: hidden; position: relative; }
 .building__thumbs ul { margin: 0; position: absolute; top: 20px; width: 20000em; list-style: none; }
-.building__thumbs ul li { width: 55px; height: 45px; margin-right: 15px; float: left; cursor: pointer; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
-.building__thumbs ul li:hover, .building__thumbs ul li.active { border-color: white; background-color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=55); opacity: 0.55; }
+.building__thumbs ul li { width: 55px; height: 45px; margin-right: 15px; float: left; cursor: pointer; border: 2px solid transparent; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.building__thumbs ul li:hover { border-color: white; background-color: white; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=55); opacity: 0.55; }
+.building__thumbs ul li.active { border: 2px solid black; }
 .building__thumbs ul li img { width: 100%; height: 100%; vertical-align: middle; }
 
 .slide__arrow-prev, .slide__arrow-next { position: absolute; top: 18px; left: 26px; padding: 0 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: url('../img/icons-s6e569a18d9.png') 0 -1195px no-repeat; width: 40px; height: 48px; cursor: pointer; }

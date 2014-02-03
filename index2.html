@@ -1,27 +1,91 @@
-<html>
-  <head>
-    <title>Translate API Example</title>
-  </head>
-  <body>
-    <div id="sourceText">Hello world</div>
-    <div id="translation">123123</div>
-    <script>
-      function translateText(response) {
-        document.getElementById("translation").innerHTML += "<br>" + response.data.translations[0].translatedText;
-      }
-    </script>
-    <script>
-      var newScript = document.createElement('script');
-      newScript.type = 'text/javascript';
-      var sourceText = escape(document.getElementById("sourceText").innerHTML);
-      // WARNING: be aware that YOUR-API-KEY inside html is viewable by all your users.
-      // Restrict your key to designated domains or use a proxy to hide your key
-      // to avoid misuage by other party.
-      var source = 'https://www.googleapis.com/language/translate/v2?key=YOUR-API-KEY&source=en&target=de&callback=translateText&q=' + sourceText;
-      newScript.src = source;
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Template</title>
+  <meta name="viewport" content="initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="google-translate-customization" content="27e2a57448e5db71-e57288bac6c9d279-g6e5f1c0ed7134b39-15"></meta>
+  <link rel="stylesheet" media="screen" href="css/jquery-ui-1.10.4.custom.css" >
+  <link rel="stylesheet" media="screen" href="css/screen.css" >
+  <link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
 
-      // When we add this script to the head, the request is sent off.
-      document.getElementsByTagName('head')[0].appendChild(newScript);
-    </script>
-  </body>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,100,900,300' rel='stylesheet' type='text/css'>
+  <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.tools.min.js"></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+                    <div class="building">
+                      <div class="building__gallery">
+                        <div class="building__gallery-wrap">
+                          <div class="building__photo">
+                            <div class="building__media">
+                              <img src="img/img1.jpg">
+                            </div>
+                            <div class="building__thumbs">
+                              <div class="caro">
+                                <ul class="slides">
+                                  <li class="active">
+                                    <a href="http://placekitten.com/g/500/350">
+                                      <img src="http://placekitten.com/g/55/45">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/600x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/650x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/500x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/600x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/700x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/500x450">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="http://placehold.it/650x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="http://placehold.it/600x350">
+                                      <img src="http://placesheen.com/94/90">
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <a class="slide__arrow-prev disabled"></a>
+                              <a class="slide__arrow-next"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+</body>
 </html>

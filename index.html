@@ -25,7 +25,44 @@
 	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/i18n/jquery.ui.datepicker-da.min.js"></script>
 	<script src="js/common.js"></script>
 
+	<script>
+			function initialize() {
+			  var mapOptions = {
+			    zoom: 14,
+			    center: new google.maps.LatLng(54.661211, 25.132891),
+			    // disableDefaultUI: true
+			  }
+			  var map = new google.maps.Map(document.getElementById('map-canvas'),
+			                                mapOptions);
 
+			  var myLatLng = new google.maps.LatLng(54.654811, 25.125491);
+			  var beachMarker = new google.maps.Marker({
+			      position: myLatLng,
+			      map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'resize', initialize);
+			google.maps.event.addDomListener(window, 'load', initialize);
+	 </script>
+	 <script>
+	 		function initialize() {
+	 		  var mapOptions = {
+	 		    zoom: 7,
+	 		    center: new google.maps.LatLng(39.495563, 0.845947),
+	 		    disableDefaultUI: true
+	 		  }
+	 		  var map = new google.maps.Map(document.getElementById('map-canvas2'),
+	 		                                mapOptions);
+
+	 		  var myLatLng = new google.maps.LatLng(38.834563, 0.080000);
+	 		  var beachMarker = new google.maps.Marker({
+	 		      position: myLatLng,
+	 		      map: map
+	 		  });
+	 		}
+	 		google.maps.event.addDomListener(window, 'resize', initialize);
+	 		google.maps.event.addDomListener(window, 'load', initialize);
+	  </script>
 </head>
 <body>
 <!-- 	<div class="slider calendar calendar-popup">

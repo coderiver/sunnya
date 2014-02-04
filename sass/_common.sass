@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	.wrap__more
 		float: right
 .wrap_slider
-	height: 514px
+	height: 510px
 	padding: 0
 	border: none
 	@include border-radius(3px)
@@ -134,16 +134,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 			display: inline-block
 		.h2
 			font-size: 16px
+		.btn
+			&.btn_blue
+				padding: 5px 7px
+				font-size: 16px
 	@include r(step2)
 		text-align: center
 		.social
 			display: inline-block
 		.h2
 			font-size: 18px
+		.btn
+			&.btn_blue
+				padding: 5px 7px
+				font-size: 16px
 	@include r(step1)
 		text-align: left
 		.h2
 			font-size: 20px
+		.btn
+			&.btn_blue
+				padding: 13px 32px
+				font-size: 18px
 	.h2
 		margin: 20px 0
 		font-weight: 100
@@ -280,6 +292,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	vertical-align: top
 	&:hover
 		color: #2A2A2A
+	@include r(step2)
+		font-size: 14px
+	@include r(step1)
+		font-size: 18px
 .owners__info
 	margin-left: 12px
 	display: inline-block
@@ -337,7 +353,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 .call
 	font-weight: bold
 	text-align: center
-	font-size: 18px
 	line-height: 1
 	position: relative
 	color: #434343
@@ -352,14 +367,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 		&:after
 			content: none
 	@include r(step2)
+		font-size: 14px
 		&:after
 			content: none
 	@include r(step1)
+		font-size: 18px
 		&:after
 			content: ""
 .call__num
-	font-size: 24px
 	font-weight: 800
+	@include r(step2)
+		font-size: 18px
+	@include r(step1)
+		font-size: 24px
 .call__now
 	color: #000 
 .call_mod
@@ -373,9 +393,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 // send
 .send
 	font-weight: bold 
-	font-size: 18px
 	color: #000 
 	text-align: center
+	@include r(step2)
+		font-size: 14px
+		.btn
+			padding: 5px 7px
+			font-size: 16px
+	@include r(step1)
+		font-size: 18px
+		.btn
+			padding: 13px 32px
+			font-size: 18px
 // social
 .social
 	font-size: 0
@@ -580,9 +609,25 @@ textarea.form-control
 			+s(i-next)
 			margin-left: 10px
 /*-------------------------  datepicker -------------------------*/
+.datepicker
+	.ui-datepicker-group
+		@include r(step3)
+			&:nth-child(8)
+				display: none
+			&:nth-child(7)
+				display: none
+		@include r(step2)
+			&:nth-child(8)
+				display: none
+			&:nth-child(7)
+				display: none
+		@include r(step1)
+			&:nth-child(8)
+				display: block
+			&:nth-child(7)
+				display: block
 .ui-datepicker-group
 	margin-bottom: 40px
-
 .calendar__cont
 	width: 100%
 	.ui-datepicker
@@ -682,7 +727,8 @@ textarea.form-control
 .ui-widget-content
 	background: #fff 
 	border: none  
-// .ui-datepicker-calendar
+.ui-datepicker-calendar
+	table-layout: fixed
 // 	tbody
 // 		tr
 // 			.ui-state-unavailable
@@ -787,6 +833,25 @@ textarea.form-control
 .slider__item
 	padding-bottom: 50px
 	overflow: hidden
+	@include r(step3)
+		.col-md-4
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				display: none
+	@include r(step2)
+		.col-md-4
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				display: none
+	@include r(step1)
+		.col-md-4
+			&:nth-child(2)
+				display: block
+			&:nth-child(3)
+				display: block
+
 .slider__item-in
 	@include r(step3)
 		margin-bottom: 15px
@@ -926,7 +991,15 @@ textarea.form-control
 		display: block
 .sent-email__title
 	font-weight: bold
-.ui-firstdate111111111111111111111111111111
-	background: blue !important
-.ui-lasttdate222222222222222222222222222222
-	background: orange !important
+.ui-firstdate
+	a
+		background: url(../img/icons/table-first.png) 0px 0px no-repeat !important
+		background-repeat: no-repeat !important
+		background-size: cover !important
+		background-position: 50% 50% !important
+.ui-lasttdate
+	a
+		background: url(../img/icons/table-last.png) 0px 0px no-repeat !important
+		background-repeat: no-repeat !important
+		background-size: cover !important
+		background-position: 50% 50% !important

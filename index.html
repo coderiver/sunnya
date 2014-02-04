@@ -24,45 +24,7 @@
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/i18n/jquery.ui.datepicker-da.min.js"></script>
 	<script src="js/common.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script>
-			function initialize() {
-			  var mapOptions = {
-			    zoom: 14,
-			    center: new google.maps.LatLng(54.661211, 25.132891),
-			    // disableDefaultUI: true
-			  }
-			  var map = new google.maps.Map(document.getElementById('map-canvas'),
-			                                mapOptions);
 
-			  var myLatLng = new google.maps.LatLng(54.654811, 25.125491);
-			  var beachMarker = new google.maps.Marker({
-			      position: myLatLng,
-			      map: map
-			  });
-			}
-			google.maps.event.addDomListener(window, 'resize', initialize);
-			google.maps.event.addDomListener(window, 'load', initialize);
-	 </script>
-	 <script>
-	 		function initialize() {
-	 		  var mapOptions = {
-	 		    zoom: 7,
-	 		    center: new google.maps.LatLng(39.495563, 0.845947),
-	 		    disableDefaultUI: true
-	 		  }
-	 		  var map = new google.maps.Map(document.getElementById('map-canvas2'),
-	 		                                mapOptions);
-
-	 		  var myLatLng = new google.maps.LatLng(38.834563, 0.080000);
-	 		  var beachMarker = new google.maps.Marker({
-	 		      position: myLatLng,
-	 		      map: map
-	 		  });
-	 		}
-	 		google.maps.event.addDomListener(window, 'resize', initialize);
-	 		google.maps.event.addDomListener(window, 'load', initialize);
-	  </script>
 
 </head>
 <body>
@@ -154,7 +116,7 @@
 				</div>
 				<div class="header container">
 					<div class="header__in row">
-					  <div class="col-md-4 col-sm-6 col-xs-12">
+					  <div class="col-md-4 col-sm-4 col-xs-12">
 					  	<div class="owners">
 					  		<div class="owners__media">
 					  			<a href="#"><img src="http://placehold.it/80x80" alt=" "></a>
@@ -162,14 +124,14 @@
 					  		<a href="#" class="owners__link">Eleanor & Mike <br> Sanderson</a>
 					  	</div>
 					  </div>
-					  <div class="col-md-4 col-sm-6 col-xs-12">
+					  <div class="col-md-4 col-sm-4 col-xs-12">
 					  	<div class="call">
 					  		<p class="call__now">Call us now!</p>
 					  		<p class="call__num"><strong>+44 203 322 300 8</strong></p>
 					  		<p>Extension: 57763</p>
 					  	</div>
 					  </div>
-					  <div class="col-md-4 col-sm-12 col-xs-12">
+					  <div class="col-md-4 col-sm-4 col-xs-12">
 					  	<div class="send">
 					  		<p><strong>Send an enquiry</strong></p>
 					  		<a href="#contact-us" class="btn btn_blue js-contact">Book your stay via email</a>
@@ -574,7 +536,7 @@
 							<div class="wrap facilities">
 								<h2 class="h2">Facilities</h2>
 								<div class="row">
-									<div class="col-md-6">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="about__item">
 											<p><strong>About the property</strong></p>
 											<p>Villa</p>
@@ -602,7 +564,7 @@
 											<p>Air-conditioning (helt)</p>
 										</div>
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-6 col-sm-6 col-xs-6">
 										<div class="about__item">
 											<p><strong>About the property</strong></p>
 											<p>Villa</p>
@@ -825,13 +787,13 @@
 <div class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="col-md-4 col-sm-4 col-xs-4">
 				<div class="footer__item footer__item_l">
 					<h2 class="h2">Book this property</h2>
 					<a href="#contact-us" class="btn btn_blue js-contact">Book your stay via email</a>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="col-md-4 col-sm-4 col-xs-4">
 				<div class="footer__item footer__item_r">
 					<h2 class="h2">Find us on social media</h2>
 					<!-- AddThis Button BEGIN -->
@@ -847,7 +809,7 @@
 					<!-- AddThis Button END -->
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-12 col-xs-12">
+			<div class="col-md-4 col-sm-4 col-xs-4">
 				<div class="footer__item">
 					<div class="call call_mod">
 						<h2 class="h2">Call us now</h2>

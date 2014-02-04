@@ -56,22 +56,25 @@ $(document).ready(function () {
           showButtonPanel: true,
           beforeShowDay: function (date) {
               debugger
-              if (date > date1 && date < date2) {
-                // if (date == date1) {return [true, 'ui-firstdate111111111111111111111111111111', ''];}
-                // if (date == date2) {return [true, 'ui-lasttdate222222222222222222222222222222', ''];}
+              if (date >= date1 && date <= date2) {
+                if (date <= date1 && date >=date1) {return [true, 'ui-firstdate', ''];}
+                if (date <= date2 && date >=date2) {return [true, 'ui-lasttdate', ''];}
                 return [true, 'ui-state-unavailable', ''];
               }
-              if (date == date1) {return [true, 'ui-firstdate11111111111111111111111111111122', ''];}
-              if (date == date2) {return [true, 'ui-lasttdate22222222222222222222222222222233', ''];}
-
-
+              
               if (date >= date9 && date <= date10) {
+                if (date <= date9 && date >=date9) {return [true, 'ui-firstdate', ''];}
+                if (date <= date10 && date >=date10) {return [true, 'ui-lasttdate', ''];}
                   return [true, 'ui-state-unavailable', ''];
               }
               if (date >= date11 && date <= date12) {
+                if (date <= date11 && date >=date11) {return [true, 'ui-firstdate', ''];}
+                if (date <= date12 && date >=date12) {return [true, 'ui-lasttdate', ''];}
                   return [true, 'ui-state-unavailable', ''];
               }
               if (date >= date13 && date <= date14) {
+                if (date <= date13 && date >=date13) {return [true, 'ui-firstdate', ''];}
+                if (date <= date14 && date >=date14) {return [true, 'ui-lasttdate', ''];}
                   return [true, 'ui-state-unavailable', ''];
               }
               if (date >= date15 && date <= date16) {

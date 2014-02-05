@@ -44,7 +44,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .wrap__bottom .wrap__rating { float: left; }
 .wrap__bottom .wrap__more { float: right; }
 
-.wrap_slider { height: 510px; padding: 0; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; overflow: hidden; }
+.wrap_slider { height: 510px; padding: 0; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+@media only screen and (max-width: 500px) { .wrap_slider { height: auto; } }
+@media only screen and (max-width: 450px) { .wrap_slider { height: auto; } }
+@media only screen and (max-width: 380px) { .wrap_slider { height: auto; } }
+@media only screen and (max-width: 600px) { .wrap_slider { height: auto; } }
+@media only screen and (max-width: 767px) { .wrap_slider { height: auto; } }
+@media (min-width: 768px) { .wrap_slider { height: auto; } }
 .wrap_slider .col-md-8, .wrap_slider .col-md-4 { padding: 0; }
 
 .wrap__more { color: #dea907; font-weight: 800; }
@@ -363,13 +369,20 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .slider__pager span { width: 12px; height: 12px; margin-right: 5px; display: inline-block; background: #c7c5be; border: 1px solid transparent; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; font-size: 0; cursor: pointer; }
 .slider__pager span.cycle-pager-active { background: white; border: 1px solid #c7c5be; }
 
-.check { margin-bottom: 15px; }
+.check { padding-right: 7px; padding-left: 0; }
 
 .building__gallery { position: relative; }
 
 .building__photo { *zoom: 1; }
 .building__photo:after { content: " "; display: table; clear: both; }
-.building__photo .building__media { text-align: center; height: 403px; overflow: hidden; }
+.building__photo .building__media { padding-left: 15px; text-align: center; height: 403px; overflow: hidden; }
+@media only screen and (max-width: 500px) { .building__photo .building__media { padding-right: 8px; } }
+@media only screen and (max-width: 450px) { .building__photo .building__media { padding-right: 8px; } }
+@media only screen and (max-width: 380px) { .building__photo .building__media { padding-right: 8px; } }
+@media only screen and (max-width: 600px) { .building__photo .building__media { padding-right: 8px; } }
+@media only screen and (max-width: 767px) { .building__photo .building__media { padding-right: 8px; } }
+@media (min-width: 768px) { .building__photo .building__media { padding-right: 8px; } }
+@media (min-width: 992px) { .building__photo .building__media { padding-right: 0; } }
 .building__photo .building__media img { vertical-align: middle; text-align: center; width: 100%; display: block; }
 
 .building__thumbs { margin-top: 14px; position: relative; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; }
@@ -387,16 +400,37 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .slide__arrow-next { position: absolute; left: auto; right: 11px; background: url('../img/icons-s59a2c0adfb.png') 0 -1180px no-repeat; width: 40px; height: 48px; }
 
 .check__map { height: 212px; }
+@media only screen and (max-width: 500px) { .check__map { margin-left: 15px; } }
+@media only screen and (max-width: 450px) { .check__map { margin-left: 15px; } }
+@media only screen and (max-width: 380px) { .check__map { margin-left: 15px; } }
+@media only screen and (max-width: 600px) { .check__map { margin-left: 15px; } }
+@media only screen and (max-width: 767px) { .check__map { margin-left: 15px; } }
+@media (min-width: 768px) { .check__map { padding-left: 15px; } }
+@media (min-width: 992px) { .check__map { padding-left: 0; margin-left: 0; } }
 .check__map img { width: 100%; }
 
 .check__availability { padding: 20px 30px 27px; border-top: 5px solid #5299f4; background-color: #5199f3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78c8f9), color-stop(100%, #1e59ed)); background-image: -webkit-linear-gradient(#78c8f9, #1e59ed); background-image: -moz-linear-gradient(#78c8f9, #1e59ed); background-image: -o-linear-gradient(#78c8f9, #1e59ed); background-image: linear-gradient(#78c8f9, #1e59ed); }
+@media only screen and (max-width: 500px) { .check__availability { margin-left: 15px; } }
+@media only screen and (max-width: 450px) { .check__availability { margin-left: 15px; } }
+@media only screen and (max-width: 380px) { .check__availability { margin-left: 15px; } }
+@media only screen and (max-width: 600px) { .check__availability { margin-left: 15px; } }
+@media only screen and (max-width: 767px) { .check__availability { margin-left: 15px; } }
+@media (min-width: 768px) { .check__availability { margin-left: 15px; } }
+@media (min-width: 992px) { .check__availability { margin-left: 0; } }
 .check__availability .h2 { margin: 0; font-weight: 900; font-size: 30px; color: white; }
 .check__availability .check__availability-note { font-weight: 900; color: #ffc000; }
 .check__availability .check__availability-note a { font-weight: 900; color: #ffc000; }
 .check__availability .check__availability-price { margin: 0 0 15px; color: white; }
 .check__availability .input-group_50 .form-control { padding: 6px 7px; }
 
-.check__send { padding: 30px; background: #5299f4; }
+.check__send { padding: 30px 30px 19px; background: #5299f4; }
+@media only screen and (max-width: 500px) { .check__send { margin-left: 15px; } }
+@media only screen and (max-width: 450px) { .check__send { margin-left: 15px; } }
+@media only screen and (max-width: 380px) { .check__send { margin-left: 15px; } }
+@media only screen and (max-width: 600px) { .check__send { margin-left: 15px; } }
+@media only screen and (max-width: 767px) { .check__send { margin-left: 15px; } }
+@media (min-width: 768px) { .check__send { margin-left: 15px; } }
+@media (min-width: 992px) { .check__send { margin-left: 0; } }
 
 .sent-email { display: none; }
 .sent-email.is-active { display: block; }
@@ -408,6 +442,25 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .ui-lasttdate a { background: url(../img/icons/table-last.png) 0px 0px no-repeat !important; background-repeat: no-repeat !important; background-size: cover !important; background-position: 50% 50% !important; }
 
 .next { width: 30px; height: 30px; background: red; position: absolute; top: 30px; left: 50px; }
+
+.prev { width: 30px; height: 30px; background: red; position: absolute; top: 30px; right: 50px; }
+
+.wrap-date__in .dp1-wrap { left: -50%; }
+.wrap-date__in .dp2-wrap { right: -50%; }
+
+.dp1, .dp2 { display: none; }
+
+.dp1-wrap { display: none; padding: 15px 55px 10px; border: 1px solid #b3bac4; background: white; position: absolute; z-index: 666; }
+.dp1-wrap .ui-datepicker .ui-datepicker-prev { top: -1px; left: -42px; }
+.dp1-wrap .ui-datepicker .ui-datepicker-prev:after { content: none; }
+.dp1-wrap .ui-datepicker .ui-datepicker-next { top: 0; right: -42px; }
+.dp1-wrap .ui-datepicker .ui-datepicker-next:after { content: none; }
+
+.dp2-wrap { display: none; padding: 15px 55px 10px; border: 1px solid #b3bac4; background: white; position: absolute; z-index: 666; }
+.dp2-wrap .ui-datepicker .ui-datepicker-prev { top: -1px; left: -42px; }
+.dp2-wrap .ui-datepicker .ui-datepicker-prev:after { content: none; }
+.dp2-wrap .ui-datepicker .ui-datepicker-next { top: 0; right: -42px; }
+.dp2-wrap .ui-datepicker .ui-datepicker-next:after { content: none; }
 
 .ico { display: inline-block; vertical-align: middle; }
 

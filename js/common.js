@@ -87,37 +87,7 @@ $(document).ready(function () {
           }
       });
 
-      $('.datepicker2').datepicker({
-          numberOfMonths: [1, 2],
-          beforeShowDay: function (date) {
-              debugger
-              if (date >= date5 && date <= date6) {
-                  return [true, 'ui-state-unavailable', ''];
-              }
-              if (date >= date7 && date <= date8) {
-                  return [true, 'ui-state-special', ''];
-              }
-              return [true, '', ''];
-          }
-      });
-
-      $(function() {
-          $( ".from" ).datepicker({
-            defaultDate: "+1w",
-            numberOfMonths: 2,
-            onClose: function( selectedDate ) {
-              $( ".to" ).datepicker( "option", "minDate", selectedDate );
-            }
-
-          });
-          $( ".to" ).datepicker({
-            defaultDate: "+1w",
-            numberOfMonths: 2,
-            onClose: function( selectedDate ) {
-              $( ".from" ).datepicker( "option", "maxDate", selectedDate );
-            }
-          });
-        });
+  
 
     // contact-form
     $(".js-send").click(function () {
@@ -139,4 +109,34 @@ $(document).ready(function () {
       $(this).parents(".description").find(".description__hide").show();
       return false;
     });
+
+    $(function() {
+      $('.date1').on('click',function(){
+        $('.dp1-wrap').fadeIn();
+        $('.dp1').fadeIn();
+      })
+      $( ".dp1" ).datepicker({
+        defaultDate: "+1w",
+        numberOfMonths: 2,
+        onSelect: function( selectedDate ) {
+          $( ".date1 input" ).val( selectedDate );
+          $('.dp1-wrap').fadeOut();
+          $('.dp1').fadeOut();
+        }
+      });
+      $('.date2').on('click',function(){
+        $('.dp2-wrap').fadeIn();
+        $('.dp2').fadeIn();
+      })
+      $( ".dp2" ).datepicker({
+        defaultDate: "+2w",
+        numberOfMonths: 2,
+        onSelect: function( selectedDate ) {
+         $( ".date2 input" ).val( selectedDate );
+         $('.dp2-wrap').fadeOut();
+         $('.dp2').fadeOut();
+        }
+      });
+    });
+
 });

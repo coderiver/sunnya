@@ -786,7 +786,11 @@ textarea.form-control
 				background: #F3F3F3 
 				border: 1px solid #a4a4a4
 				font-weight: normal
-
+.calendar__description_mod
+	text-align: center
+	li
+		float: none
+		display: inline-block
 // placeing
 .placeing
 .placeing__meta
@@ -1090,9 +1094,21 @@ textarea.form-control
 .wrap-date__in
 	.dp1-wrap
 		left: -50%
+		@include r(step3)
+			left: -15px
+		@include r(step2)
+			left: -15px
+		@include r(step1)
+			left: -473px
 	.dp2-wrap
-		right: -50% 
-
+		right: -50%
+		margin-right: 102px
+		@include r(step3)
+			margin-right: 157px
+		@include r(step2)
+			margin-right: 157px
+		@include r(step1)
+			margin-right: 102px
 .dp1, .dp2
 	display: none
 .dp1-wrap

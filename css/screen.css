@@ -327,6 +327,9 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .calendar__description li.calendar__special { font-weight: bold; margin-right: 0; }
 .calendar__description li.calendar__special .ico { background: #f3f3f3; border: 1px solid #a4a4a4; font-weight: normal; }
 
+.calendar__description_mod { text-align: center; }
+.calendar__description_mod li { float: none; display: inline-block; }
+
 .placeing__meta { margin-bottom: 10px; *zoom: 1; }
 .placeing__meta:after { content: " "; display: table; clear: both; }
 
@@ -446,7 +449,13 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .prev { width: 30px; height: 30px; background: red; position: absolute; top: 30px; right: 50px; }
 
 .wrap-date__in .dp1-wrap { left: -50%; }
-.wrap-date__in .dp2-wrap { right: -50%; }
+@media only screen and (max-width: 767px) { .wrap-date__in .dp1-wrap { left: -15px; } }
+@media (min-width: 768px) { .wrap-date__in .dp1-wrap { left: -15px; } }
+@media (min-width: 992px) { .wrap-date__in .dp1-wrap { left: -473px; } }
+.wrap-date__in .dp2-wrap { right: -50%; margin-right: 102px; }
+@media only screen and (max-width: 767px) { .wrap-date__in .dp2-wrap { margin-right: 157px; } }
+@media (min-width: 768px) { .wrap-date__in .dp2-wrap { margin-right: 157px; } }
+@media (min-width: 992px) { .wrap-date__in .dp2-wrap { margin-right: 102px; } }
 
 .dp1, .dp2 { display: none; }
 

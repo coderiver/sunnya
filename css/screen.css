@@ -498,8 +498,8 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 @media (min-width: 768px) { .building__thumbs .caro { width: 75%; } }
 @media only screen and (max-width: 767px) { .building__thumbs .caro { width: 75%; } }
 @media only screen and (max-width: 600px) { .building__thumbs .caro { width: 70%; } }
-@media only screen and (max-width: 380px) { .building__thumbs .caro { width: 60%; } }
-@media only screen and (max-width: 450px) { .building__thumbs .caro { width: 60%; } }
+@media only screen and (max-width: 380px) { .building__thumbs .caro { width: 40%; } }
+@media only screen and (max-width: 450px) { .building__thumbs .caro { width: 50%; } }
 @media only screen and (max-width: 500px) { .building__thumbs .caro { width: 50%; } }
 .building__thumbs ul { margin: 0; position: absolute; top: 20px; width: 20000em; list-style: none; }
 .building__thumbs ul li { width: 55px; height: 45px; margin-right: 15px; float: left; cursor: pointer; border: 2px solid transparent; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }

@@ -527,9 +527,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 // my-label
 .my-label
 	margin-bottom: 10px
+	position: relative
 .input-group
 	width: 100%
-
+.my-label_m
+	position: relative
+.calendar-wrap
+	position: static !important
+// !!!
 // input-group_mod-list
 .input-group_mod-list
 	width: 100%
@@ -783,13 +788,35 @@ textarea.form-control
 .ui-datepicker-multi-2
 	.ui-datepicker-group
 		width: 48%
-		@include r(step6)
+		@include r(step4)
 			width: 100%
 		&.ui-datepicker-group-first
 			margin-right: 4%
-			@include r(step6)
+			@include r(step4)
 				margin-right: 0
-		
+
+.ui-datepicker
+	@include r(step3)
+		width: 400px !important
+	@include r(step4)
+		width: 300px !important
+	// width: 300px !important
+	// @include r(step7)
+	// 	width: 300px !important
+	// @include r(step6)
+	// 	width: 260px !important
+	// @include r(step5)
+	// 	width: 260px !important
+	// @include r(step4)
+	// 	width: auto !important
+	// @include r(step3)
+	// 	width: auto !important
+	// @include r(step2)
+	// 	width: auto !important
+	// @include r(step1)
+	// 	width: auto !important
+
+
 .ui-datepicker
 	padding: 0
 	.ui-datepicker-current
@@ -945,6 +972,8 @@ textarea.form-control
 	li
 		float: none
 		display: inline-block
+		@include r(step4)
+			display: block
 // placeing
 .placeing
 .placeing__meta
@@ -1358,13 +1387,18 @@ textarea.form-control
 			left: -473px
 	.dp2-wrap
 		right: -50%
-		margin-right: 102px
+		// margin-right: 102px
+		margin-right: 15px
 		@include r(step3)
-			margin-right: 157px
+			// margin-right: 157px
+			margin-right: -15px
+			right: 0
 		@include r(step2)
-			margin-right: 157px
+			margin-right: 14px
+			right: 0
 		@include r(step1)
-			margin-right: 102px
+			// margin-right: 102px
+			margin-right: 15px
 	.dp3-wrap
 		left: -50%
 		@include r(step3)
@@ -1417,7 +1451,10 @@ textarea.form-control
 			right: -42px
 			&:after
 				content: none
-
+.dp3
+	.ui-datepicker
+		@include r(step4)
+			width: 100% !important 
 .dp3-wrap
 	display: none
 	padding: 15px 55px 10px
@@ -1427,17 +1464,23 @@ textarea.form-control
 	z-index: 666
 	right: 0
 	@include r(step7)
-		right: -113px
+		left: 0
+		right: 0
 	@include r(step6)
-		right: -113px
+		left: 0
+		right: 0
 	@include r(step5)
-		right: -113px
+		left: 0
+		right: 0
 	@include r(step4)
-		right: -113px
+		left: 0
+		right: 0
 	@include r(step3)
-		right: -113px
+		right: 0
+		// right: inherit
+		// left: 0
 	@include r(step2)
-		right: -113px
+		right: 0
 	@include r(step1)
 		right: 0
 	.ui-datepicker
@@ -1461,6 +1504,9 @@ textarea.form-control
 	z-index: 666
 	right: -100%
 	margin-right: 185px
+	@include r(step3)
+		right: 0
+		margin-right: -10px
 	.ui-datepicker
 		.ui-datepicker-prev
 			top: -1px

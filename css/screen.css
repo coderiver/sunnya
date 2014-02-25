@@ -227,9 +227,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .about__item { margin-top: 25px; }
 .about__item p { line-height: 1; }
 
-.my-label { margin-bottom: 10px; }
+.my-label { margin-bottom: 10px; position: relative; }
 
 .input-group { width: 100%; }
+
+.my-label_m { position: relative; }
+
+.calendar-wrap { position: static !important; }
 
 .input-group_mod-list { width: 100%; }
 .input-group_mod-list input { border-color: #949494; border-bottom-left-radius: 4px !important; border-top-left-radius: 4px !important; font-size: 14px; font-weight: 400; color: #919191; }
@@ -359,9 +363,12 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .calendar__cont .ui-datepicker-group { margin-bottom: 40px; }
 
 .ui-datepicker-multi-2 .ui-datepicker-group { width: 48%; }
-@media only screen and (max-width: 450px) { .ui-datepicker-multi-2 .ui-datepicker-group { width: 100%; } }
+@media only screen and (max-width: 600px) { .ui-datepicker-multi-2 .ui-datepicker-group { width: 100%; } }
 .ui-datepicker-multi-2 .ui-datepicker-group.ui-datepicker-group-first { margin-right: 4%; }
-@media only screen and (max-width: 450px) { .ui-datepicker-multi-2 .ui-datepicker-group.ui-datepicker-group-first { margin-right: 0; } }
+@media only screen and (max-width: 600px) { .ui-datepicker-multi-2 .ui-datepicker-group.ui-datepicker-group-first { margin-right: 0; } }
+
+@media only screen and (max-width: 767px) { .ui-datepicker { width: 400px !important; } }
+@media only screen and (max-width: 600px) { .ui-datepicker { width: 300px !important; } }
 
 .ui-datepicker { padding: 0; cursor: pointer; border: none; }
 .ui-datepicker .ui-datepicker-current { display: none; }
@@ -403,6 +410,7 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 
 .calendar__description_mod { text-align: center; }
 .calendar__description_mod li { float: none; display: inline-block; }
+@media only screen and (max-width: 600px) { .calendar__description_mod li { display: block; } }
 
 .placeing__meta { margin-bottom: 10px; *zoom: 1; }
 .placeing__meta:after { content: " "; display: table; clear: both; }
@@ -560,10 +568,10 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 @media only screen and (max-width: 767px) { .wrap-date__in .dp1-wrap { left: -15px; } }
 @media (min-width: 768px) { .wrap-date__in .dp1-wrap { left: -15px; } }
 @media (min-width: 992px) { .wrap-date__in .dp1-wrap { left: -473px; } }
-.wrap-date__in .dp2-wrap { right: -50%; margin-right: 102px; }
-@media only screen and (max-width: 767px) { .wrap-date__in .dp2-wrap { margin-right: 157px; } }
-@media (min-width: 768px) { .wrap-date__in .dp2-wrap { margin-right: 157px; } }
-@media (min-width: 992px) { .wrap-date__in .dp2-wrap { margin-right: 102px; } }
+.wrap-date__in .dp2-wrap { right: -50%; margin-right: 15px; }
+@media only screen and (max-width: 767px) { .wrap-date__in .dp2-wrap { margin-right: -15px; right: 0; } }
+@media (min-width: 768px) { .wrap-date__in .dp2-wrap { margin-right: 14px; right: 0; } }
+@media (min-width: 992px) { .wrap-date__in .dp2-wrap { margin-right: 15px; } }
 .wrap-date__in .dp3-wrap { left: -50%; }
 @media only screen and (max-width: 767px) { .wrap-date__in .dp3-wrap { left: -15px; } }
 @media (min-width: 768px) { .wrap-date__in .dp3-wrap { left: -15px; } }
@@ -585,13 +593,15 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .dp2-wrap .ui-datepicker .ui-datepicker-next { top: 0; right: -42px; }
 .dp2-wrap .ui-datepicker .ui-datepicker-next:after { content: none; }
 
+@media only screen and (max-width: 600px) { .dp3 .ui-datepicker { width: 100% !important; } }
+
 .dp3-wrap { display: none; padding: 15px 55px 10px; border: 1px solid #b3bac4; background: white; position: absolute; z-index: 666; right: 0; }
-@media only screen and (max-width: 500px) { .dp3-wrap { right: -113px; } }
-@media only screen and (max-width: 450px) { .dp3-wrap { right: -113px; } }
-@media only screen and (max-width: 380px) { .dp3-wrap { right: -113px; } }
-@media only screen and (max-width: 600px) { .dp3-wrap { right: -113px; } }
-@media only screen and (max-width: 767px) { .dp3-wrap { right: -113px; } }
-@media (min-width: 768px) { .dp3-wrap { right: -113px; } }
+@media only screen and (max-width: 500px) { .dp3-wrap { left: 0; right: 0; } }
+@media only screen and (max-width: 450px) { .dp3-wrap { left: 0; right: 0; } }
+@media only screen and (max-width: 380px) { .dp3-wrap { left: 0; right: 0; } }
+@media only screen and (max-width: 600px) { .dp3-wrap { left: 0; right: 0; } }
+@media only screen and (max-width: 767px) { .dp3-wrap { right: 0; } }
+@media (min-width: 768px) { .dp3-wrap { right: 0; } }
 @media (min-width: 992px) { .dp3-wrap { right: 0; } }
 .dp3-wrap .ui-datepicker .ui-datepicker-prev { top: -1px; left: -42px; }
 .dp3-wrap .ui-datepicker .ui-datepicker-prev:after { content: none; }
@@ -599,6 +609,7 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .dp3-wrap .ui-datepicker .ui-datepicker-next:after { content: none; }
 
 .dp4-wrap { display: none; padding: 15px 55px 10px; border: 1px solid #b3bac4; background: white; position: absolute; z-index: 666; right: -100%; margin-right: 185px; }
+@media only screen and (max-width: 767px) { .dp4-wrap { right: 0; margin-right: -10px; } }
 .dp4-wrap .ui-datepicker .ui-datepicker-prev { top: -1px; left: -42px; }
 .dp4-wrap .ui-datepicker .ui-datepicker-prev:after { content: none; }
 .dp4-wrap .ui-datepicker .ui-datepicker-next { top: 0; right: -42px; }

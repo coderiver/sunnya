@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .owners { margin-top: 5px; position: relative; font-size: 0; *zoom: 1; }
 .owners:after { content: " "; display: table; clear: both; }
 .owners:after { content: ""; width: 1px; height: 80px; background: #ececec; position: absolute; right: 0; top: 0; -webkit-box-shadow: 1px 0 0 #dddddd; -moz-box-shadow: 1px 0 0 #dddddd; box-shadow: 1px 0 0 #dddddd; }
+@media only screen and (max-width: 380px) { .owners { margin-left: 0; } }
 @media only screen and (max-width: 767px) { .owners { margin-left: -80px; margin-bottom: 10px; text-align: center; }
   .owners:after { content: none; } }
 @media (min-width: 768px) { .owners:after { right: -6px; } }

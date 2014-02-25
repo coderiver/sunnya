@@ -166,5 +166,17 @@ $(document).ready(function () {
         }
       });
     });
-
+  //
+  $('.js-calendar-active input').focus(function(event) {
+    $(this).parent().addClass("is-active");
+  });
+  $('.js-calendar-active input').blur(function(event) {
+    $(this).parent().removeClass("is-active");
+  });
+  //
+  $(".calendar-i").click(function () {
+    $(this).parents().find(".dp").hide();
+    $(this).parents().find(".dp-wrap").hide();
+    return false;
+  });
 });

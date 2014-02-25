@@ -465,6 +465,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	min-height: 209px
 	p
 		margin-bottom: 20px
+.widget1_mob-hide
+	@include r(step7)
+		display: none
 .widget2
 	min-height: 771px
 // more
@@ -496,6 +499,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	margin-bottom: 10px
 .input-group
 	width: 100%
+
 // input-group_mod-list
 .input-group_mod-list
 	width: 100%
@@ -531,6 +535,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 					&:hover
 						background: #5299f5
 						color: #fff
+.has-warning
+	.form-control
+		border-color: #454545
+		color: #454545
+		+placeholder
+			color: #454545
+.has-error
+	.form-control
+		border-color: #a50000
+		color: #a50000
+		+placeholder
+			color: #a50000
 // input-group_mod
 .input-group_mod
 	width: 100%
@@ -553,6 +569,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 		color: #fff
 		+border-radius(4px 0 0 4px)
 .input-group-addon
+	+transition(ease-in-out .15s)
 	&.input-group-addon_cal
 		width: 44px
 		background: #949494
@@ -580,6 +597,36 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 .input-group_50
 	input
 		border-color: #949494
+	&:hover
+		input
+			border-color: #ffc000
+			border-right-color: transparent
+			+placeholder
+				color: #434343 
+		.input-group-addon
+			background-color: #ffc000
+			border: 1px solid #ffc000 
+			+transition(ease-in-out .15s)
+.js-calendar-active
+	&.is-active
+		input
+			border-color: #ffc000
+			border-right-color: transparent
+			+placeholder
+				color: #434343
+		.input-group-addon
+			background-color: #ffc000
+			border: 1px solid #ffc000 
+			+transition(ease-in-out .15s)
+.hover-blue
+	&:hover
+		input
+			border-color: #5299f4
+			+placeholder
+				color: #434343
+		.btn-default, .input-group-addon
+			background: #5299f4
+			border-color: #5299f4
 textarea.form-control
 	resize: vertical
 	font-weight: 400
@@ -622,6 +669,51 @@ textarea.form-control
 /*-------------------------  datepicker -------------------------*/
 .datepicker
 	.ui-datepicker-group
+		@include r(step7)
+			// &:nth-child(2)
+			// 	display: none
+			&:nth-child(3)
+				display: none
+			&:nth-child(4)
+				display: none
+			&:nth-child(5)
+				display: none
+			&:nth-child(6)
+				display: none
+			&:nth-child(7)
+				display: none
+			&:nth-child(8)
+				display: none
+		@include r(step6)
+			// &:nth-child(2)
+			// 	display: none
+			&:nth-child(3)
+				display: none
+			&:nth-child(4)
+				display: none
+			&:nth-child(5)
+				display: none
+			&:nth-child(6)
+				display: none
+			&:nth-child(7)
+				display: none
+			&:nth-child(8)
+				display: none
+		@include r(step5)
+			// &:nth-child(2)
+			// 	display: none
+			&:nth-child(3)
+				display: none
+			&:nth-child(4)
+				display: none
+			&:nth-child(5)
+				display: none
+			&:nth-child(6)
+				display: none
+			&:nth-child(7)
+				display: none
+			&:nth-child(8)
+				display: none
 		@include r(step3)
 			&:nth-child(8)
 				display: none
@@ -637,8 +729,8 @@ textarea.form-control
 				display: block
 			&:nth-child(7)
 				display: block
-.ui-datepicker-group
-	margin-bottom: 40px
+// .ui-datepicker-group
+// 	margin-bottom: 40px
 .calendar__cont
 	width: 100%
 	.ui-datepicker
@@ -653,6 +745,8 @@ textarea.form-control
 				table
 					width: 100%
 					margin: 0
+	.ui-datepicker-group
+		margin-bottom: 40px
 .ui-datepicker-multi-2
 	.ui-datepicker-group
 		width: 48%
@@ -710,6 +804,12 @@ textarea.form-control
 			left: -40px
 			top: 7px
 			font-weight: normal
+		// @include r(step7)
+		// 	top: -290px
+		@include r(step6)
+			top: -290px
+		@include r(step5)
+			top: -290px
 	.ui-datepicker-next-hover
 		border: none
 	.ui-widget-header
@@ -825,6 +925,13 @@ textarea.form-control
 			font-size: 12px
 			&:first-child
 				border-left: none
+	.table__hide-mobile
+		@include r(step5)
+			display: none
+		@include r(step6)
+			display: none
+		@include r(step7)
+			display: none
 
 // slider 
 .slider
@@ -846,8 +953,10 @@ textarea.form-control
 		right: 20px
 		+s(i-next)
 .slider__item
+	width: 100%
 	padding-bottom: 50px
 	overflow: hidden
+	white-space: normal 
 	@include r(step3)
 		.col-md-4
 			&:nth-child(2)
@@ -911,18 +1020,25 @@ textarea.form-control
 		height: 403px
 		overflow: hidden
 		@include r(step7)
+			height: auto
 			padding-right: 8px
 		@include r(step6)
+			height: auto
 			padding-right: 8px
 		@include r(step5)
+			height: auto
 			padding-right: 8px
 		@include r(step4)
+			height: auto
 			padding-right: 8px
 		@include r(step3)
+			height: auto
 			padding-right: 8px
 		@include r(step2)
-			padding-right: 8px 
+			height: 403px
+			padding-right: 8px
 		@include r(step1)
+			height: 403px
 			padding-right: 0
 		img
 			vertical-align: middle
@@ -942,6 +1058,20 @@ textarea.form-control
 		margin: 0 auto
 		overflow: hidden
 		position: relative
+		@include r(step1)
+			width: 75%
+		@include r(step2)
+			width: 75%
+		@include r(step3)
+			width: 75%
+		@include r(step4)
+			width: 70%
+		@include r(step5)
+			width: 60%
+		@include r(step6)
+			width: 60%
+		@include r(step7)
+			width: 60%
 	ul
 		margin: 0
 		position: absolute
@@ -969,20 +1099,45 @@ textarea.form-control
 				vertical-align: middle
 
 .slide__arrow-prev, .slide__arrow-next
+	width: 40px
+	height: 46px
+	border: 1px solid #7bb3cb
+	background-color: #5199f3
 	position: absolute 
 	top: 18px 
 	left: 26px
 	padding: 0 5px
+	+g(#78c8f9, #2d6bef)
+	+border-radius(6px)
 	+box
-	+s(i-prew2)
+	// +s(i-prew2)
 	cursor: pointer
 	&.disabled
 		+opacity(.5)
+	&:before
+		content: ""
+		position: absolute
+		top: 14px
+		left: 13px
+.slide__arrow-prev
+	&:before
+		+s(arr_left)
 .slide__arrow-next
 	position: absolute
 	left: auto
 	right: 11px
-	+s(i-next2)
+	// +s(i-next2)
+	@include r(step3)
+		right: 19px
+	@include r(step2)
+		right: 19px
+	@include r(step1)
+		right: 11px
+	&:before
+		+s(arr_right)
+		left: 15px
+
+
 // check
 .check
 .check__map
@@ -1120,6 +1275,10 @@ textarea.form-control
 
 .dp1, .dp2, .dp3, .dp4
 	display: none
+	position: relative
+	z-index: 777
+.dp1__in, .dp2__in, .dp3__in, .dp4__in
+	margin-top: 40px
 .dp1-wrap
 	display: none
 	padding: 15px 55px 10px
@@ -1212,3 +1371,11 @@ textarea.form-control
 			right: -42px
 			&:after
 				content: none
+.calendar-i
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 333
+

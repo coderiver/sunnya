@@ -12,7 +12,8 @@
 	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,100,900,300' rel='stylesheet' type='text/css'>
+<!-- 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,100,900,300' rel='stylesheet' type='text/css'> -->
+
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -20,6 +21,7 @@
 	<script src="js/jquery.tools.min.js"></script>
 	<script src="js/respond.js"></script>
 	<script src="js/cycle.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/jquery.scrollTo.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
 	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/i18n/jquery.ui.datepicker-da.min.js"></script>
@@ -222,15 +224,16 @@
 														<div class="col-md-6 col-sm-6 col-xs-6">
 															<div class="wrap-date">
 																<div class="wrap-date__in">
-											  					<div class="input-group input-group_50 date1">
+											  					<div class="input-group input-group_50 date1 js-calendar-active">
 									  					      <input type="text" class="form-control" placeholder="Arrival">
 									  					      <span class="input-group-addon  input-group-addon_cal">
 									  					      </span>
 									  					    </div>
-									  					    <div class="dp1-wrap">
-									  					      <div class="dp1"></div>
+									  					    <div class="dp1-wrap dp-wrap">
+									  					      <div class="dp1 dp"></div>
+									  					      <div class="calendar-i"></div>
 									  					      <div class="dp1__in">
-									  					        <ul class="calendar__description calendar__description_mod">
+									  					        <ul class="calendar__description">
 									  					          <li class="calendar__available"><span><i class="ico">10</i>Available</span></li>
 									  					          <li class="calendar__unavailable"><i class="ico">10</i><span>Unavailable</span></li>
 									  					          <li class="calendar__special"><i class="ico">10</i><span>Special offer</span></li>
@@ -243,13 +246,14 @@
 														<div class="col-md-6 col-sm-6 col-xs-6">
 															<div class="wrap-date">
 																<div class="wrap-date__in">
-											  					<div class="input-group input-group_50 date2">
+											  					<div class="input-group input-group_50 date2 js-calendar-active">
 									  					      <input type="text" class="form-control" placeholder="Departure">
 									  					      <span class="input-group-addon  input-group-addon_cal">
 									  					      </span>
 									  					    </div>
-									  					    <div class="dp2-wrap">
-									  					      <div class="dp2"></div>
+									  					    <div class="dp2-wrap dp-wrap">
+									  					      <div class="dp2 dp"></div>
+									  					      <div class="calendar-i"></div>
 									  					      <div class="dp2__in">
 									  					        <ul class="calendar__description">
 									  					          <li class="calendar__available"><span><i class="ico">10</i>Available</span></li>
@@ -287,7 +291,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<div class="wrap widget1">
+							<div class="wrap widget1 widget1_mob-hide">
 								<h2 class="h2">”Very well equipped Villa with a lovely view!”</h2>
 								<p>We spent one week at Casa Windlenook in august 2012 and thoroughly enjoyed it. The Villa has been equipped with high spec furniture and equipment which really...</p>
 								<div class="wrap__bottom">
@@ -380,30 +384,30 @@
 						  		</div>
 						  	</div>
 						  	<div class="row">
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
 						  			<div class="my-label">
 						  				<div class="input-group input-group_mod has-success">
 						  				  <input type="text" class="form-control" placeholder="First name">
 						  				</div>
 						  			</div>
 						  		</div>
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
 						  			<div class="my-label">
 						  				<div class="input-group input-group_mod has-warning">
 						  				  <input type="text" class="form-control" placeholder="Last name">
 						  				</div>
 						  			</div>
 						  		</div>
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
 						  			<div class="my-label">
 						  				<div class="input-group input-group_mod has-error">
 						  				  <input type="text" class="form-control" placeholder="E-mail">
 						  				</div>
 						  			</div>
 						  		</div>
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
 							  		<div class="my-label">
-							  			<div class="input-group input-group_mod-list">
+							  			<div class="input-group input-group_mod-list hover-blue">
 		  			            <input type="text" class="form-control" placeholder="Country">
 		  			            <div class="input-group-btn">
 		  			              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="ico arr"></span></button>
@@ -422,7 +426,7 @@
 		  			          </div>
 							  		</div>
 						  		</div>
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
   						  		<div class="my-label">
   						  			<div class="input-group input-group_mod input-group_mod2">
   			  			        <span class="input-group-addon input-group-addon_mod">+45</span>
@@ -430,17 +434,18 @@
   			  			      </div>
   						  		</div>
 						  		</div>
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
 	  					  		<div class="my-label">
 	  					  			<div class="row">
 	  					  				<div class="col-md-6 col-sm-6 col-xs-6">
-	  					  					<div class="input-group input-group_50 date3">
+	  					  					<div class="input-group input-group_50 date3 js-calendar-active hover-blue">
 	  			  					      <input type="text" class="form-control" placeholder="Arrival">
 	  			  					      <span class="input-group-addon input-group-addon_cal">
 	  			  					      </span>
 	  			  					    </div>
-	  			  					    <div class="dp3-wrap">
-	  			  					      <div class="dp3"></div>
+	  			  					    <div class="dp3-wrap dp-wrap">
+	  			  					      <div class="dp3 dp"></div>
+	  			  					      <div class="calendar-i"></div>
 	  			  					      <div class="dp3__in">
 	  			  					        <ul class="calendar__description calendar__description_mod">
 	  			  					          <li class="calendar__available"><span><i class="ico">10</i>Available</span></li>
@@ -451,13 +456,14 @@
 	  			  					    </div>
 	  					  				</div>
 	  					  				<div class="col-md-6 col-sm-6 col-xs-6">
-	  					  					<div class="input-group input-group_50 date4">
+	  					  					<div class="input-group input-group_50 date4 js-calendar-active hover-blue">
 	  			  					      <input type="text" class="form-control" placeholder="Departure">
 	  			  					      <span class="input-group-addon input-group-addon_cal">
 	  			  					      </span>
 	  			  					    </div>
-	  			  					    <div class="dp4-wrap">
-	  			  					      <div class="dp4"></div>
+	  			  					    <div class="dp4-wrap dp-wrap">
+	  			  					      <div class="dp4 dp"></div>
+	  			  					      <div class="calendar-i"></div>
 	  			  					      <div class="dp4__in">
 	  			  					        <ul class="calendar__description calendar__description_mod">
 	  			  					          <li class="calendar__available"><span><i class="ico">10</i>Available</span></li>
@@ -470,11 +476,11 @@
 	  					  			</div>
 	  					  		</div>
 						  		</div>
-						  		<div class="col-md-12 col-sm-6 col-xs-6">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
   						  		<div class="my-label">
   						  			<div class="row">
   						  				<div class="col-md-6 col-sm-6 col-xs-6">
-  						  					<div class="input-group input-group_mod-list input-group_mini">
+  						  					<div class="input-group input-group_mod-list input-group_mini hover-blue">
   			  			            <input type="text" class="form-control" placeholder="Adults">
   			  			            <div class="input-group-btn">
   			  			              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="ico arr"></span></button>
@@ -493,7 +499,7 @@
   			  			          </div>
   						  				</div>
   						  				<div class="col-md-6 col-sm-6 col-xs-6">
-  						  					<div class="input-group input-group_mod-list input-group_mini">
+  						  					<div class="input-group input-group_mod-list input-group_mini hover-blue">
   			  			            <input type="text" class="form-control" placeholder="Children">
   			  			            <div class="input-group-btn">
   			  			              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="ico arr"></span></button>
@@ -515,12 +521,6 @@
   						  		</div>
 						  		</div>
 						  	</div>
-
-
-
-
-
-
 
 					  		<div class="my-label">
 					  			<textarea class="form-control" rows="10" placeholder="Your message here"></textarea>
@@ -642,7 +642,7 @@
 											<tr>
 												<th class="table__label-first">Dates</th>
 												<th>Weekly</th>
-												<th>Nightly</th>
+												<th class="table__hide-mobile">Nightly</th>
 												<th class="table__label-last">Minimum stay</th>
 											</tr>
 										</thead>
@@ -650,67 +650,67 @@
 											<tr>
 												<td>02 Nov, 2013 — 20 Dec, 2013</td>
 												<td>6,712 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>4 nights</td>
 											</tr>
 											<tr>
 												<td>21 Dec, 2013 — 04 Jan, 2014</td>
 												<td>10,069 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 											<tr>
 												<td>05 Jan, 2014 — 04 Apr, 2014</td>
 												<td>6,712 kr</td>
-												<td>1,305 kr</td>
+												<td class="table__hide-mobile">1,305 kr</td>
 												<td>4 nights</td>
 											</tr>
 											<tr>
 												<td>05 Apr, 2014 — 06 Jun, 2014</td>
 												<td>10,069 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 											<tr>
 												<td>05 Apr, 2014 — 06 Jun, 2014</td>
 												<td>10,069 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 											<tr>
 												<td>07 Jun, 2014 — 04 Jul, 2014</td>
 												<td>12,306 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 											<tr>
 												<td>05 Jul, 2014 — 29 Aug, 2014</td>
 												<td>17,154 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>2 week</td>
 											</tr>
 											<tr>
 												<td>30 Aug, 2014 — 03 Okt, 2014</td>
 												<td>12,306 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 											<tr>
 												<td>04 Okt, 2014 — 31 Okt, 2014</td>
 												<td>10,069 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 											<tr>
 												<td>01 Nov, 2014 — 19 Dec, 2014</td>
 												<td>6,712 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>4 nights</td>
 											</tr>
 											<tr>
 												<td>20 Dec, 2014 — 02 Jan, 2015</td>
 												<td>10,069 kr</td>
-												<td>-</td>
+												<td class="table__hide-mobile">-</td>
 												<td>1 week</td>
 											</tr>
 										</tbody>
@@ -740,7 +740,7 @@
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-12"> 
 							<div class="wrap slider">
 								<h2 class="h2">Reviews</h2>
 								<div class="slider__switch">
@@ -748,7 +748,9 @@
 									<div class="slider__switch-right cycle-next2"><i class="ico"></i></div>
 								</div>
 								<div id="one" class="cycle-slideshow"
-								data-cycle-fx="scrollHorz"
+								data-cycle-fx="carousel"
+								data-cycle-carousel-visible=1
+								data-cycle-carousel-fluid=true
 								data-allow-wrap="false"
 								data-cycle-timeout="0"
 								data-cycle-slides="> .slider__item"

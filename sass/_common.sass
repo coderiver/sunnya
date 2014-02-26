@@ -487,6 +487,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	position: relative
 	text-decoration: none
 	+box
+	@include r(step5)
+		float: none !important
 	&:before
 		content: ""
 		+s(i-g2)

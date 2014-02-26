@@ -207,8 +207,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .social .tw { background: url('../img/icons-see50a6780b.png') 0 -967px no-repeat; width: 32px; height: 32px; }
 .social .pt { background: url('../img/icons-see50a6780b.png') 0 -1330px no-repeat; width: 32px; height: 32px; }
 
-.translate { height: 26px; line-height: 26px; display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #efefef; border: 1px solid #969696; color: #434343; font-weight: bold; padding: 0px 20px 0px 32px; position: relative; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-@media only screen and (max-width: 380px) { .translate { float: none !important; } }
+.translate { height: 25px; line-height: 25px; display: inline-block; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #efefef; border: 1px solid #969696; color: #434343; font-weight: bold; padding: 0px 20px 0px 32px; position: relative; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media only screen and (max-width: 380px) { .translate.pull-right { float: none !important; } }
 .translate:before { content: ""; background: url('../img/icons-see50a6780b.png') 0 -1296px no-repeat; width: 24px; height: 24px; position: absolute; left: 0; top: 0; }
 .translate:hover { text-decoration: none; color: #434343; }
 

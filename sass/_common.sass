@@ -475,8 +475,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 		+s(pt)
 // translate
 .translate
-	height: 26px
-	line-height: 26px
+	height: 25px
+	line-height: 25px
 	display: inline-block
 	+border-radius(4px)
 	background: #efefef
@@ -487,8 +487,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	position: relative
 	text-decoration: none
 	+box
-	@include r(step5)
-		float: none !important
+	&.pull-right
+		@include r(step5)
+			float: none !important
 	&:before
 		content: ""
 		+s(i-g2)

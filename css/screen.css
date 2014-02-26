@@ -494,7 +494,7 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 @media (min-width: 992px) { .building__photo .building__media { height: 403px; padding-right: 0; } }
 .building__photo .building__media img { vertical-align: middle; text-align: center; width: 100%; display: block; }
 
-.building__thumbs { margin-top: 14px; position: relative; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; }
+.building__thumbs { position: relative; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; }
 .building__thumbs:after { content: " "; display: table; clear: both; }
 .building__thumbs .caro { width: 80%; height: 85px; margin: 0 auto; overflow: hidden; position: relative; }
 @media (min-width: 992px) { .building__thumbs .caro { width: 75%; } }
@@ -546,7 +546,7 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .check__availability .check__availability-price { margin: 0 0 15px; color: white; }
 .check__availability .input-group_50 .form-control { padding: 6px 7px; }
 
-.check__send { padding: 30px 30px 19px; background: #5299f4; }
+.check__send { padding: 15px 30px 15px; background: #5299f4; }
 @media only screen and (max-width: 500px) { .check__send { margin-left: 15px; } }
 @media only screen and (max-width: 450px) { .check__send { margin-left: 15px; } }
 @media only screen and (max-width: 380px) { .check__send { margin-left: 15px; } }

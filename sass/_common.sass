@@ -22,6 +22,10 @@ body
 	right: 0
 	background: url(../img/icons/bg.png) #f0eee8
 	+cover
+.bg_mod
+	background: url(../img/bg.jpg) 0 0 repeat
+	height: 100%
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family: "Roboto", sans-serif !important
 .h2
@@ -82,7 +86,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 		display: inline-block
 .header-wrap__in
 	background: #FFF
-
+.header-wrap_mod
+	.header
+		.header__in
+			margin: 0
+			+border-radius(0px)
+	.topper__in
+		padding: 13px 10px 50px
 .topper
 	.topper__in
 		margin: 0
@@ -207,6 +217,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	display: inline-block
 	+s(logo)
 	+hidetext
+.logo2
+	display: block
+	font-size: 30px
+	font-weight: bold
+	color: #FFF
+	text-decoration: none
+	position: relative
+	.logo2__i
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		+s(logo2)
+	.logo2__title
+		position: absolute
+		top: 40px
+		left: 47px
+	&:hover
+		color: #FFF
+		text-decoration: none
 /*------------------------- block -------------------------*/
 // some btn
 .btn-wrap
@@ -1354,6 +1384,42 @@ textarea.form-control
 	display: none
 	&.is-active
 		display: block
+.check__rent
+	height: 190px
+	padding: 20px 30px 27px
+	background-color: #5199f3
+	+g(#1e59ed,#78c8f9)
+	+box
+.check__rent-top
+	margin-bottom: 25px
+	color: #FFF
+.check__rent-in
+	+clr
+.check__rent-media
+	width: 80px
+	margin-right: 17px
+	float: left
+.check__rent-descr
+	overflow: hidden
+	line-height: 1.2
+	color: #FFF 
+	.h3
+		margin: 0 0 5px
+		font-size: 21px
+	.check__rent-tel
+		font-size: 16px
+		margin: 0 0 5px
+	.check__rent-note
+		font-size: 14px
+		margin: 0
+.check__rent-meta
+	margin-right: 15px
+	font-size: 24px
+	font-weight: bold
+.check__rent-price
+	font-size: 18px
+.check__rent-price-cost
+	color: #FFC000 
 .sent-email__title
 	font-weight: bold
 .ui-firstdate
@@ -1533,4 +1599,14 @@ textarea.form-control
 	left: 0
 	right: 0
 	z-index: 333
+
+.data
+	font-family: "Roboto", sans-serif
+.data__title
+	font-size: 30px
+	font-weight: bold
+	color: #313030 
+.data__note
+	font-size: 18px
+	color: #504F4F
 

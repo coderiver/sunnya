@@ -1,0 +1,646 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="google-translate-customization" content="27e2a57448e5db71-e57288bac6c9d279-g6e5f1c0ed7134b39-15"></meta>
+	<link rel="stylesheet" media="screen" href="css/jquery-ui-1.10.4.custom.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" media="screen" href="css/bootstrap-theme.min.css" >
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,,700,100,900' rel='stylesheet' type='text/css'>
+
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/respond.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/jquery.ui.datepicker-da.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script>
+			function initialize() {
+			  var mapOptions = {
+			    zoom: 14,
+			    center: new google.maps.LatLng(54.661211, 25.132891),
+			    // disableDefaultUI: true
+			  }
+			  var map = new google.maps.Map(document.getElementById('map-canvas'),
+			                                mapOptions);
+
+			  var myLatLng = new google.maps.LatLng(54.654811, 25.125491);
+			  var beachMarker = new google.maps.Marker({
+			      position: myLatLng,
+			      map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'resize', initialize);
+			google.maps.event.addDomListener(window, 'load', initialize);
+	 </script>
+	 <script>
+	 		function initialize() {
+	 		  var mapOptions = {
+	 		    zoom: 7,
+	 		    center: new google.maps.LatLng(39.495563, 0.845947),
+	 		    disableDefaultUI: true
+	 		  }
+	 		  var map = new google.maps.Map(document.getElementById('map-canvas2'),
+	 		                                mapOptions);
+
+	 		  var myLatLng = new google.maps.LatLng(38.834563, 0.080000);
+	 		  var beachMarker = new google.maps.Marker({
+	 		      position: myLatLng,
+	 		      map: map
+	 		  });
+	 		}
+	 		google.maps.event.addDomListener(window, 'resize', initialize);
+	 		google.maps.event.addDomListener(window, 'load', initialize);
+	  </script>
+</head>
+<body>
+	<!-- BEGIN  out-->
+	<div class="out">
+		<div class="bg bg_mod"></div>
+		<div class="out__in">
+			<!-- BEGIN header -->
+			<div class="header-wrap header-wrap_mod">
+				<div class="topper container">
+					<div class="topper__in row">
+						<div class="col-md-10 col-sm-9 col-xs-12">
+							<a href="#" class="logo2">
+								<span class="logo2__title">your-guesthouse-in-montebello.com</span>
+								<i class="logo2__i"></i>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-3 col-xs-12">
+							<div class="btn-wrap">
+								<div class="dropdown dropdown_bl">
+									<a data-toggle="dropdown" href="#" class="btn btn_custum btn_dark">EUR</a>
+									<ul class="dropdown-menu dropdown-menu_mod" role="menu">
+									  <li><a href="#">1</a></li>
+									  <li><a href="#">2</a></li>
+									  <li><a href="#">3</a></li>
+									  <li><a href="#">4</a></li>
+									  <li><a href="#">5</a></li>
+									  <li><a href="#">6</a></li>
+									  <li><a href="#">7</a></li>
+									</ul>
+								</div>
+								<div class="dropdown dropdown_bl">
+								  <a data-toggle="dropdown" href="#"  class="btn btn_custum btn_dark"><i class="ico i-eng"></i></a>
+								  <ul class="dropdown-menu" role="menu">
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 1</a></li>
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 2</a></li>
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 3</a></li>
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 4</a></li>
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 5</a></li>
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 6</a></li>
+								    <li><a href="#"><i class="ico i-eng"></i> Language option 7</a></li>
+								  </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header container">
+					<div class="header__in row">
+					  <div class="col-md-12 col-sm-12 col-xs-12">
+				  		<div class="data">
+				  			<div class="data__title">5 bedroom holiday Guesthouse</div>
+				  			<div class="data__note">Corfu, Greece - 12 guests / 5 bedrooms / 3 bathrooms - Internet (wireless broadband)</div>
+				  		</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<!-- / .header -->
+			<!-- BEGIN page -->
+			<div class="page">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="wrap wrap_slider">
+								<div class="check">
+									<div class="row">
+										<div class="col-md-8 col-sm-12">
+											<div class="building">
+		  									<div class="building__gallery">
+													<div class="building__gallery-wrap">
+														<div class="building__photo">
+															<div class="building__media">
+																	<img src="http://placekitten.com/g/605/403">
+															</div>
+															<div class="building__thumbs">
+																<div class="caro">
+																	<ul class="slides">
+																		<li class="active">
+																			<a href="http://placekitten.com/g/605/403">
+																				<img src="http://placekitten.com/g/55/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/604/403">
+																				<img src="http://placekitten.com/g/54/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/605/403">
+																				<img src="http://placekitten.com/g/55/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/604/403">
+																				<img src="http://placekitten.com/g/54/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/605/403">
+																				<img src="http://placekitten.com/g/55/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/604/403">
+																				<img src="http://placekitten.com/g/54/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/605/403">
+																				<img src="http://placekitten.com/g/55/45">
+																			</a>
+																		</li>
+																		<li class="">
+																			<a href="http://placekitten.com/g/604/403">
+																				<img src="http://placekitten.com/g/54/45">
+																			</a>
+																		</li>
+																		<li>
+																			<a href="http://placekitten.com/g/605/403">
+																				<img src="http://placekitten.com/g/55/45">
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+																<a class="slide__arrow-prev disabled"></a>
+																<a class="slide__arrow-next"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-12">
+											<div class="check">
+												<div class="check__map"><div id="map-canvas2" class="js-map" style='width:100%; height:100%;'></div></div>
+												<div class="check__rent">
+													<div class="check__rent-top">
+														<span class="check__rent-meta">Rent now!</span>
+														<span class="check__rent-price">From <span class="check__rent-price-cost">€120</span>per night</span>
+													</div>
+													<div class="check__rent-in">
+														<div class="check__rent-media">
+															<img src="http://placehold.it/80x67" alt=" ">
+														</div>
+														<div class="check__rent-descr">
+															<h3 class="h3">Eleanor & Mike</h3>
+															<p class="check__rent-tel">Call us on +44 203 322 3008</p>
+															<p class="check__rent-note">Enter extension 568151</p>
+														</div>
+													</div>
+												</div>
+												<div class="check__send">
+													<a href="#contact-us" class="btn btn-block btn_warning js-contact">Book now</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="wrap widget2">
+								<div class="col-md-8">
+									<div class="description">
+										<div class="description__top">
+											<h2 class="h2 pull-left">Description</h2>
+											<a href="#" class="translate pull-right">Translate to Danish</a>
+										</div>
+										<div class="description__rating">
+											<p><strong>Stunning Greek Villa with swimming pool and amazing views</strong></p>
+											<p>Corfu, Ionian Islands > Greece</p>
+											<p>Sleeps up to 8 guests</p>
+											<p>Rating: <img src="img/star2.jpg" alt=""></p> 
+										</div>
+										<div class="description__cont">
+											<p><strong>Location, Location, Location!</strong></p>
+											<p>The panoramic views are enjoyed from every room in this immaculate and stylish Villa located on the exclusive, sought-after coastline of Cumbre del Sol. South-facing and in an elevated position, Casa Windlenook was lovingly designed and built by the owners to maximise the fabulous location. Views south are of The Mediterranean (so close you can hear it!), south-west of the rugged conservation area on the hill opposite, and west towards the Sierra Bernia mountains for a dramatic skyline and just fabulous sunsets.</p>
+											<p>Located on the Costa Blanca half way between Javea and Moraira, Cumbre del Sol is within an area considered by the World Health Organisation to have one of the most environmentally perfect climates in the world. It is a truly extraordinary hillside location with it’s own private beach, Moraig beach, just 5 minutes drive from the villa. On a clear day, magnificent views include east to Ibiza, Calpe’s famous Penon de Ifach and the stunning Montgo or 'Elephant' mountains. Alicante or Valencia airports are easily accessible.</p>
+											<p>Quality, Quality, Quality! </p>
+											<p>Every imaginable comfort is provided for in this truly luxurious home.</p>
+											<p>Indoors - in the lounge and dining area everything exudes quality, from the top of the range 3D High Definition 40' flat screen Tv with Sky Satellite and full Sports Package...</p>
+											<div class="description__hide">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quas minus numquam aspernatur dolorum hic deserunt. Quos, et, minima, magni doloremque quidem itaque veritatis quo nulla alias temporibus enim unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quas minus numquam aspernatur dolorum hic deserunt. Quos, et, minima, magni doloremque quidem itaque veritatis quo nulla alias temporibus enim unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quas minus numquam aspernatur dolorum hic deserunt. Quos, et, minima, magni doloremque quidem itaque veritatis quo nulla alias temporibus enim unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quas minus numquam aspernatur dolorum hic deserunt. Quos, et, minima, magni doloremque quidem itaque veritatis quo nulla alias temporibus enim unde.
+											</div>
+											<a href="#" class="more js-more">Read more</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="about">
+										<!-- AddThis Button BEGIN -->
+										<div class="addthis_toolbox addthis_default_style">
+										<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+										<a class="addthis_button_tweet"></a>
+										<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal" pi:pinit:url="http://www.addthis.com/features/pinterest" pi:pinit:media="http://www.addthis.com/cms-content/images/features/pinterest-lg.png"></a>
+										<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+										</div>
+										<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+										<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50d95bb072b9d515"></script>
+										<!-- AddThis Button END -->
+										<div class="about__item">
+											<p><strong>About the property</strong></p>
+											<p>Villa</p>
+											<p>3 bedrooms</p>
+											<p>2 bathrooms</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Features</strong></p>
+											<p>Dish-washer</p>
+											<p>Parking</p>
+											<p>Air-conditioning</p>
+											<p>Internet (wireless broadband)</p>
+											<p>Swimming pool (private)</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Suitability</strong></p>
+											<p>Child friendly</p>
+											<p>Senior friendly</p>
+											<p>Not suitable for wheelchairs</p>
+											<p>Pets not allowed</p>
+											<p>No long-term rentals</p>
+											<p>Smoking not allowed</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="wrap widget2" id="contact-us">
+								<h2 class="h2">Contact us</h2>
+								<div class="owners owners_mod js-owners1">
+						  		<div class="owners__media">
+						  			<a href="#"><img src="http://placehold.it/80x67" alt=" "></a>
+						  		</div>
+						  		<div class="owners__info">
+						  			<a href="#" class="owners__link">Eleanor & Mike</a>
+						  			<p>We speak English and French</p>
+						  		</div>
+						  	</div>
+						  	<div class="row">
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+						  			<div class="my-label">
+						  				<div class="input-group input-group_mod has-success">
+						  				  <input type="text" class="form-control" placeholder="First name">
+						  				</div>
+						  			</div>
+						  		</div>
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+						  			<div class="my-label">
+						  				<div class="input-group input-group_mod has-warning">
+						  				  <input type="text" class="form-control" placeholder="Last name">
+						  				</div>
+						  			</div>
+						  		</div>
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+						  			<div class="my-label">
+						  				<div class="input-group input-group_mod has-error">
+						  				  <input type="text" class="form-control" placeholder="E-mail">
+						  				</div>
+						  			</div>
+						  		</div>
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+							  		<div class="my-label">
+							  			<div class="input-group input-group_mod-list hover-blue">
+		  			            <input type="text" class="form-control" placeholder="Country">
+		  			            <div class="input-group-btn">
+		  			              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="ico arr"></span></button>
+		  			              <ul class="dropdown-menu pull-right" role="menu">
+		  			                <li><a href="#">Bulgaria</a></li>
+		  			                <li><a href="#">Burkina Faso</a></li>
+		  			                <li><a href="#">Burundi</a></li>
+		  			                <li><a href="#">Cambodia</a></li>
+		  			                <li><a href="#">Cameroon</a></li>
+		  			                <li><a href="#">Canada</a></li>
+		  			                <li><a href="#">Cape Verde</a></li>
+		  			                <li><a href="#">Cayman Islands</a></li>
+		  			                <li><a href="#">Central African Republic</a></li>
+		  			              </ul>
+		  			            </div>
+		  			          </div>
+							  		</div>
+						  		</div>
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+  						  		<div class="my-label">
+  						  			<div class="input-group input-group_mod input-group_mod2">
+  			  			        <span class="input-group-addon input-group-addon_mod">+45</span>
+  			  			        <input type="text" class="form-control" placeholder="Phone">
+  			  			      </div>
+  						  		</div>
+						  		</div>
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+	  					  		<div class="my-label my-label_m">
+	  					  			<div class="row">
+	  					  				<div class="col-md-6 col-sm-6 col-xs-6 calendar-wrap">
+	  					  					<div class="input-group input-group_50 date3 js-calendar-active hover-blue">
+	  			  					      <input type="text" class="form-control" placeholder="Arrival">
+	  			  					      <span class="input-group-addon input-group-addon_cal">
+	  			  					      </span>
+	  			  					    </div>
+	  			  					    <div class="dp3-wrap dp-wrap">
+	  			  					      <div class="dp3 dp"></div>
+	  			  					      <div class="calendar-i"></div>
+	  			  					      <div class="dp3__in">
+	  			  					        <ul class="calendar__description calendar__description_mod">
+	  			  					          <li class="calendar__available"><span><i class="ico">10</i>Available</span></li>
+	  			  					          <li class="calendar__unavailable"><i class="ico">10</i><span>Unavailable</span></li>
+	  			  					          <li class="calendar__special"><i class="ico">10</i><span>Special offer</span></li>
+	  			  					        </ul>
+	  			  					      </div>
+	  			  					    </div>
+	  					  				</div>
+	  					  				<div class="col-md-6 col-sm-6 col-xs-6">
+	  					  					<div class="input-group input-group_50 date4 js-calendar-active hover-blue">
+	  			  					      <input type="text" class="form-control" placeholder="Departure">
+	  			  					      <span class="input-group-addon input-group-addon_cal">
+	  			  					      </span>
+	  			  					    </div>
+	  			  					    <div class="dp4-wrap dp-wrap">
+	  			  					      <div class="dp4 dp"></div>
+	  			  					      <div class="calendar-i"></div>
+	  			  					      <div class="dp4__in">
+	  			  					        <ul class="calendar__description calendar__description_mod">
+	  			  					          <li class="calendar__available"><span><i class="ico">10</i>Available</span></li>
+	  			  					          <li class="calendar__unavailable"><i class="ico">10</i><span>Unavailable</span></li>
+	  			  					          <li class="calendar__special"><i class="ico">10</i><span>Special offer</span></li>
+	  			  					        </ul>
+	  			  					      </div>
+	  			  					    </div>
+	  					  				</div>
+	  					  			</div>
+	  					  		</div>
+						  		</div>
+						  		<div class="col-md-12 col-sm-6 col-xs-12">
+  						  		<div class="my-label">
+  						  			<div class="row">
+  						  				<div class="col-md-6 col-sm-6 col-xs-6">
+  						  					<div class="input-group input-group_mod-list input-group_mini hover-blue">
+  			  			            <input type="text" class="form-control" placeholder="Adults">
+  			  			            <div class="input-group-btn">
+  			  			              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="ico arr"></span></button>
+  			  			              <ul class="dropdown-menu pull-right" role="menu">
+  			  			                <li><a href="#">Bulgaria</a></li>
+  			  			                <li><a href="#">Burkina Faso</a></li>
+  			  			                <li><a href="#">Burundi</a></li>
+  			  			                <li><a href="#">Cambodia</a></li>
+  			  			                <li><a href="#">Cameroon</a></li>
+  			  			                <li><a href="#">Canada</a></li>
+  			  			                <li><a href="#">Cape Verde</a></li>
+  			  			                <li><a href="#">Cayman Islands</a></li>
+  			  			                <li><a href="#">Central African Republic</a></li>
+  			  			              </ul>
+  			  			            </div>
+  			  			          </div>
+  						  				</div>
+  						  				<div class="col-md-6 col-sm-6 col-xs-6">
+  						  					<div class="input-group input-group_mod-list input-group_mini hover-blue">
+  			  			            <input type="text" class="form-control" placeholder="Children">
+  			  			            <div class="input-group-btn">
+  			  			              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="ico arr"></span></button>
+  			  			              <ul class="dropdown-menu pull-right" role="menu">
+  			  			                <li><a href="#">Bulgaria</a></li>
+  			  			                <li><a href="#">Burkina Faso</a></li>
+  			  			                <li><a href="#">Burundi</a></li>
+  			  			                <li><a href="#">Cambodia</a></li>
+  			  			                <li><a href="#">Cameroon</a></li>
+  			  			                <li><a href="#">Canada</a></li>
+  			  			                <li><a href="#">Cape Verde</a></li>
+  			  			                <li><a href="#">Cayman Islands</a></li>
+  			  			                <li><a href="#">Central African Republic</a></li>
+  			  			              </ul>
+  			  			            </div>
+  			  			          </div>
+  						  				</div>
+  						  			</div>
+  						  		</div>
+						  		</div>
+						  	</div>
+
+					  		<div class="my-label">
+					  			<textarea class="form-control" rows="10" placeholder="Your message here"></textarea>
+					  		</div>
+					  		<a href="#" class="btn btn-block btn_warning js-send">Send enquiry</a>
+					  		<div class="sent-email">
+					  			<h4 class="sent-email__title">Your enquiry was sent!</h4>
+					  			<p><strong>A confirm email has been sent to your email</strong></p>
+					  			<p>If you want to get a response now, you are welcome to give us a call using the contact information below.</p>
+					  			<div class="owners owners_mod2 js-owners2">
+					  				<div class="owners__media">
+					  					<a href="#"><img src="http://placehold.it/80x67" alt=" "></a>
+					  				</div>
+					  				<div class="owners__info">
+					  					<a href="#" class="owners__link">Eleanor & Mike</a>
+					  					<p>We speak English and French</p>
+					  				</div>
+					  			</div>
+					  			<div class="owners-tel">
+					  				<p><strong>+44 203 223 300 8</strong></p>
+					  				<p>Extension: 57763</p>
+					  			</div>
+					  			<a href="#" class="another-mail js-another-mail">Send another email</a>
+					  		</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="wrap">
+								<h2 class="h2">Map & Area</h2>
+								<div class="map__item"><div id="map-canvas" class="js-map" style='width:100%; height:100%;'></div></div>
+								<div class="map__meta">
+									<p class="map__descr pull-left"><strong>Local area information</strong></p>
+									<a href="#" class="translate pull-right">Translate to Danish</a>
+								</div>
+								<div class="map__cont">
+									<p>The panoramic views are enjoyed from every room in this immaculate and stylish Villa located on the exclusive, sought-after coastline of Cumbre del Sol. South-facing and in an elevated position, Casa Windlenook was lovingly designed and built by the owners to maximise the fabulous location.</p>
+									<p>Views south are of The Mediterranean (so close you can hear it!), south-west of the rugged conservation area on the hill opposite, and west towards the Sierra Bernia.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="wrap facilities">
+								<h2 class="h2">Facilities</h2>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="about__item">
+											<p><strong>About the property</strong></p>
+											<p>Villa</p>
+											<p>3 bedrooms</p>
+											<p>2 bathrooms</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Funktioner</strong></p>
+											<p>Parkering</p>
+											<p>Parkering</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Egnethed</strong></p>
+											<p>Børnevenligt</p>
+											<p>Ældrevenligt</p>
+											<p>Ikke egnet til kørestole</p>
+											<p>Husdyr ikke tilladt</p>
+											<p>Ingen langtidsleje</p>
+											<p>Rygning forbudt</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Funktioner</strong></p>
+											<p>Opvaskemaskine</p>
+											<p>Parkering</p>
+											<p>Air-conditioning (helt)</p>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="about__item">
+											<p><strong>About the property</strong></p>
+											<p>Villa</p>
+											<p>3 soveværelser</p>
+											<p>2 badeværelser</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Funktioner</strong></p>
+											<p>Opvaskemaskine</p>
+											<p>Parkering</p>
+											<p>Air-conditioning (helt)</p>
+											<p>Internet (trådløst bredbånd)</p>
+											<p>Svømmebassin (privat)</p>
+										</div>
+										<div class="about__item">
+											<p><strong>Egnethed</strong></p>
+											<p>Børnevenligt</p>
+											<p>Ældrevenligt</p>
+											<p>Ikke egnet til kørestole</p>
+											<p>Ingen langtidsleje</p>
+											<p>Rygning forbudt</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12"> 
+							<div class="wrap slider">
+								<h2 class="h2">Reviews</h2>
+								<div class="slider__switch">
+									<div class="slider__switch-left cycle-prev2"><i class="ico"></i></div>
+									<div class="slider__switch-right cycle-next2"><i class="ico"></i></div>
+								</div>
+								<div id="one" class="cycle-slideshow"
+								data-cycle-fx="carousel"
+								data-cycle-carousel-visible=1
+								data-cycle-carousel-fluid=true
+								data-allow-wrap="false"
+								data-cycle-timeout="0"
+								data-cycle-slides="> .slider__item"
+								data-cycle-pager=".slider__pager"
+								data-cycle-prev=".cycle-prev2"
+								data-cycle-next=".cycle-next2"
+								>
+									<div class="slider__item">
+										<div class="col-md-4">
+											<div class="slider__item-in">
+												<p class="slider__meta"><strong>Very well equipped Villa with a lovely view!</strong></p>
+												<p class="slider__rate"><img src="img/star2.jpg" alt=""><span>-Ed, August 06 2012</span></p>
+												<p>We spent one week at Casa Windlenook in august 2012 and thoroughly enjoyed it. The Villa has been equipped with high spec furniture and equipment which really impresses. The view is lovely, the kids loved the wifi and 3D TV (when allowed!). All in all thoroughly recommended.</p>
+												<a href="#" class="translate">Translate to Danish</a>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="slider__item-in">
+												<p class="slider__meta"><strong>Worth every Euro!</strong></p>
+												<p class="slider__rate"><img src="img/star2.jpg" alt=""><span>- Jean Costello, June 11 2012</span></p>
+												<p>Through enquiry, booking and finally staying at Windlenook the attention to detail that Eleanor & Mike give to their rental is excellent. We wanted for nothing whilst we stayed at the villa; it is equipped to a high standard with everything you will need ...plus some more. The location is superb and very peaceful; an ideal spot to chill out. There is also plenty to do and see in the area if you feel inclined.</p>
+												<a href="#" class="translate">Translate to Danish</a>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="slider__item-in">
+												<p class="slider__meta"><strong>Wonderful time in a fantastic villa!</strong></p>
+												<p class="slider__rate"><img src="img/star2.jpg" alt=""><span>- Sunny, July 18 2012</span></p>
+												<p>After many disappointing and stressful package holidays we decided to try something different and after a lot of searching on the web came across Casa Windlenook. The villa stood out among all the rest but as so often happens we were half expecting to find that on arrival it did not have live up to our expectations. We couldn't have been more wrong! The villa was exceptional! It was spotlessly </p>
+												<a href="#" class="translate">Translate to Danish</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider__item">
+										<div class="col-md-4 col-sm-12">
+											<div class="slider__item-in">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptas, nulla, atque, dolor alias iure sed impedit sequi molestiae a ipsum ex in qui quibusdam minima aliquam est voluptatibus maxime excepturi nesciunt repellat iste dolores asperiores nostrum pariatur neque provident reprehenderit! Ex, reprehenderit eveniet quasi necessitatibus quibusdam aspernatur corporis ad?
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-12">
+											<div class="slider__item-in">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptas, nulla, atque, dolor alias iure sed impedit sequi molestiae a ipsum ex in qui quibusdam minima aliquam est voluptatibus maxime excepturi nesciunt repellat iste dolores asperiores nostrum pariatur neque provident reprehenderit! Ex, reprehenderit eveniet quasi necessitatibus quibusdam aspernatur corporis ad?
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-12">
+											<div class="slider__item-in">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptas, nulla, atque, dolor alias iure sed impedit sequi molestiae a ipsum ex in qui quibusdam minima aliquam est voluptatibus maxime excepturi nesciunt repellat iste dolores asperiores nostrum pariatur neque provident reprehenderit! Ex, reprehenderit eveniet quasi necessitatibus quibusdam aspernatur corporis ad?
+											</div>
+										</div>
+									</div>
+									<div class="slider__item">
+										<div class="col-md-4">
+											<div class="slider__item-in">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptas, nulla, atque, dolor alias iure sed impedit sequi molestiae a ipsum ex in qui quibusdam minima aliquam est voluptatibus maxime excepturi nesciunt repellat iste dolores asperiores nostrum pariatur neque provident reprehenderit! Ex, reprehenderit eveniet quasi necessitatibus quibusdam aspernatur corporis ad?
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="slider__item-in">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptas, nulla, atque, dolor alias iure sed impedit sequi molestiae a ipsum ex in qui quibusdam minima aliquam est voluptatibus maxime excepturi nesciunt repellat iste dolores asperiores nostrum pariatur neque provident reprehenderit! Ex, reprehenderit eveniet quasi necessitatibus quibusdam aspernatur corporis ad?
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="slider__item-in">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, voluptas, nulla, atque, dolor alias iure sed impedit sequi molestiae a ipsum ex in qui quibusdam minima aliquam est voluptatibus maxime excepturi nesciunt repellat iste dolores asperiores nostrum pariatur neque provident reprehenderit! Ex, reprehenderit eveniet quasi necessitatibus quibusdam aspernatur corporis ad?
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider__pager"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- / .page -->
+		</div>
+	</div>
+	<!-- / .out -->
+</body>
+</html>

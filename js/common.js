@@ -179,4 +179,10 @@ $(document).ready(function () {
     $(this).parents().find(".dp-wrap").hide();
     return false;
   });
+
+  $('.dropdown-menu a').click(function(event) {
+    $(this).parents('.input-group-btn').removeClass('open').prev().val($(this).text());
+    //$(this).parents('.dropdown-menu').hide();
+    return false;
+  });
 });

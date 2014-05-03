@@ -181,7 +181,7 @@ $(document).ready(function () {
   });
 
   $('.dropdown-menu a').click(function(event) {
-    $(this).parents('.input-group-btn').removeClass('open').prev().val($(this).text());
+    $(this).parents('.input-group-btn').removeClass('open').prev().val($(this).text()).prev().val($(this).data('value'));
     //$(this).parents('.dropdown-menu').hide();
     return false;
   });

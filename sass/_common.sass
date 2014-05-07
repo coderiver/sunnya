@@ -249,12 +249,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 .btn
 	&.btn_custum
 		width: 42px
-		padding: 8px 0px
+		//padding: 8px 0px
 		margin-left: 7px
 		display: inline-block
 		text-align: center
 		+border-radius(5px)
 		color: #FFF 
+		&.btn_top
+			text-align: center
+			height: 38px 
+			line-height: 38px 
+			padding: 0 
+			.ico
+				position: relative
+				top: -2px 
+				left: 1px 
 	&.btn_dark
 		background: #313131
 		&:hover, &:focus
@@ -315,6 +324,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 			min-width: 70px
 	&.open
 		+border-radius(3px 3px 0px 3px)
+	@each $s in au,da,de,en,en_us,fr,es,it,nb,ru,sv,pt
+		.flag_#{$s}
+			display: inline-block
+			margin-right: 4px 
+			+s(#{$s})
 // owners
 .owners
 	margin-top: 5px

@@ -111,10 +111,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 
 .copyright { padding: 25px; border-top: 1px solid #cacaca; font-size: 12px; }
 
-.logo { display: inline-block; background: url('../img/icons-sa2fba1dfd9.png') 0 -1535px no-repeat; width: 116px; height: 62px; font: 0/0 a; text-shadow: none; color: transparent; }
+.logo { display: inline-block; background: url('../img/icons-s46b12c3236.png') 0 -1812px no-repeat; width: 116px; height: 62px; font: 0/0 a; text-shadow: none; color: transparent; }
 
 .logo2 { display: block; font-size: 30px; font-weight: bold; color: white; text-decoration: none; position: relative; }
-.logo2 .logo2__i { content: ""; position: absolute; top: 0; left: 0; background: url('../img/icons-sa2fba1dfd9.png') 0 -1607px no-repeat; width: 136px; height: 79px; }
+.logo2 .logo2__i { content: ""; position: absolute; top: 0; left: 0; background: url('../img/icons-s46b12c3236.png') 0 -1884px no-repeat; width: 136px; height: 79px; }
 .logo2 .logo2__title { position: absolute; top: 40px; left: 47px; }
 .logo2:hover { color: white; text-decoration: none; }
 
@@ -122,7 +122,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .btn-wrap { margin-top: 24px; font-size: 0; text-align: right; }
 @media only screen and (max-width: 767px) { .btn-wrap { margin-bottom: 10px; text-align: center; } }
 
-.btn.btn_custum { width: 42px; padding: 8px 0px; margin-left: 7px; display: inline-block; text-align: center; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; color: white; }
+.btn.btn_custum { width: 42px; margin-left: 7px; display: inline-block; text-align: center; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; color: white; }
+.btn.btn_custum.btn_top { text-align: center; height: 38px; line-height: 38px; padding: 0; }
+.btn.btn_custum.btn_top .ico { position: relative; top: -2px; left: 1px; }
 .btn.btn_dark { background: #313131; }
 .btn.btn_dark:hover, .btn.btn_dark:focus { color: white; text-decoration: none; }
 .btn.btn_blue { padding: 13px 32px; border: 1px solid #7bb3cb; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #5199f3; background-image: -moz-linear-gradient(#78c8f9, #2d6bef); background-image: -webkit-linear-gradient(#78c8f9, #2d6bef); background-image: linear-gradient(#78c8f9, #2d6bef); color: white; font-size: 18px; font-weight: 800; text-shadow: 0 -1px 0 black; }
@@ -140,6 +142,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .dropdown.dropdown_bl .dropdown-menu li a:hover { background: #444242; }
 .dropdown.dropdown_bl .dropdown-menu_mod { min-width: 70px; }
 .dropdown.open { -moz-border-radius: 3px 3px 0px 3px; -webkit-border-radius: 3px; border-radius: 3px 3px 0px 3px; }
+.dropdown .flag_au { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -58px no-repeat; width: 26px; height: 25px; }
+.dropdown .flag_da { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1096px no-repeat; width: 25px; height: 24px; }
+.dropdown .flag_de { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1130px no-repeat; width: 25px; height: 24px; }
+.dropdown .flag_en { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1164px no-repeat; width: 25px; height: 25px; }
+.dropdown .flag_en_us { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1199px no-repeat; width: 25px; height: 24px; }
+.dropdown .flag_fr { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1310px no-repeat; width: 25px; height: 25px; }
+.dropdown .flag_es { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1233px no-repeat; width: 25px; height: 25px; }
+.dropdown .flag_it { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1777px no-repeat; width: 23px; height: 25px; }
+.dropdown .flag_nb { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -1973px no-repeat; width: 22px; height: 25px; }
+.dropdown .flag_ru { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -2142px no-repeat; width: 25px; height: 23px; }
+.dropdown .flag_sv { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -2264px no-repeat; width: 23px; height: 24px; }
+.dropdown .flag_pt { display: inline-block; margin-right: 4px; background: url('../img/icons-s46b12c3236.png') 0 -2110px no-repeat; width: 22px; height: 22px; }
 
 .owners { margin-top: 5px; position: relative; font-size: 0; *zoom: 1; }
 .owners:after { content: " "; display: table; clear: both; }
@@ -182,7 +196,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .another-mail:hover { color: #f6c918; }
 
 .call { font-weight: bold; text-align: center; line-height: 1; position: relative; color: #434343; }
-.call:after { content: ""; background: url('../img/icons-sa2fba1dfd9.png') 0 -942px no-repeat; width: 19px; height: 79px; position: absolute; top: 5px; right: 0; }
+.call:after { content: ""; background: url('../img/icons-s46b12c3236.png') 0 -977px no-repeat; width: 19px; height: 79px; position: absolute; top: 5px; right: 0; }
 @media only screen and (max-width: 767px) { .call { text-align: center; }
   .call:after { content: none; } }
 @media (min-width: 768px) { .call { font-size: 14px; }
@@ -213,13 +227,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .social .ico:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
 .social li { margin-left: 9px; float: left; overflow: hidden; }
 .social li:first-child { margin-left: 0; }
-.social .fb { background: url('../img/icons-sa2fba1dfd9.png') 0 -1061px no-repeat; width: 32px; height: 32px; }
-.social .tw { background: url('../img/icons-sa2fba1dfd9.png') 0 -1959px no-repeat; width: 32px; height: 32px; }
-.social .pt { background: url('../img/icons-sa2fba1dfd9.png') 0 -1756px no-repeat; width: 32px; height: 32px; }
+.social .fb { background: url('../img/icons-s46b12c3236.png') 0 -1268px no-repeat; width: 32px; height: 32px; }
+.social .tw { background: url('../img/icons-s46b12c3236.png') 0 -2370px no-repeat; width: 32px; height: 32px; }
+.social .pt { background: url('../img/icons-s46b12c3236.png') 0 -2110px no-repeat; width: 22px; height: 22px; }
 
 .translate { height: 25px; line-height: 25px; display: inline-block; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background: #efefef; border: 1px solid #969696; color: #434343; font-weight: bold; padding: 0px 20px 0px 32px; position: relative; text-decoration: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 380px) { .translate.pull-right { float: none !important; } }
-.translate:before { content: ""; background: url('../img/icons-sa2fba1dfd9.png') 0 -1189px no-repeat; width: 24px; height: 24px; position: absolute; left: 0; top: 0; }
+.translate:before { content: ""; background: url('../img/icons-s46b12c3236.png') 0 -1431px no-repeat; width: 24px; height: 24px; position: absolute; left: 0; top: 0; }
 .translate:hover { text-decoration: none; color: #434343; }
 
 .widget1 { min-height: 209px; }
@@ -257,7 +271,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 .input-group_mod-list input::-moz-placeholder { font-size: 14px; color: #919191; font-weight: 400; }
 .input-group_mod-list input::-webkit-input-placeholder { font-size: 14px; color: #919191; font-weight: 400; }
 .input-group_mod-list input::placeholder { font-size: 14px; color: #919191; font-weight: 400; }
-.input-group_mod-list .arr { background: url('../img/icons-sa2fba1dfd9.png') 0 -1103px no-repeat; width: 18px; height: 11px; }
+.input-group_mod-list .arr { background: url('../img/icons-s46b12c3236.png') 0 -1345px no-repeat; width: 18px; height: 11px; }
 .input-group_mod-list .input-group-btn { position: static; }
 .input-group_mod-list .input-group-btn .btn { background: #949494; }
 .input-group_mod-list .input-group-btn.open .btn { background: #5299f5; }
@@ -291,7 +305,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Roboto", sa
 
 .input-group-addon { -moz-transition: ease-in-out 0.15s; -o-transition: ease-in-out 0.15s; -webkit-transition: ease-in-out 0.15s; transition: ease-in-out 0.15s; }
 .input-group-addon.input-group-addon_cal { width: 44px; background: #949494; border-color: #949494; padding: 6px 12px; position: relative; }
-.input-group-addon.input-group-addon_cal:before { content: ""; background: url('../img/icons-sa2fba1dfd9.png') 0 -911px no-repeat; width: 21px; height: 21px; position: absolute; margin-top: -10px; top: 50%; margin-left: -10px; left: 50%; }
+.input-group-addon.input-group-addon_cal:before { content: ""; background: url('../img/icons-s46b12c3236.png') 0 -946px no-repeat; width: 21px; height: 21px; position: absolute; margin-top: -10px; top: 50%; margin-left: -10px; left: 50%; }
 .input-group-addon:last-child { border-left: 1px solid transparent !important; }
 
 .input-group_mod2 input { border-bottom-left-radius: 0px !important; border-top-left-radius: 0px !important; border-top-right-radius: 4px !important; border-bottom-right-radius: 4px !important; }
@@ -341,9 +355,9 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 
 .calendar__switch { margin-bottom: 10px; clear: both; overflow: hidden; }
 .calendar__switch .calendar__switch-left { float: left; cursor: pointer; }
-.calendar__switch .calendar__switch-left .ico { background: url('../img/icons-sa2fba1dfd9.png') 0 -1379px no-repeat; width: 30px; height: 32px; margin-right: 10px; }
+.calendar__switch .calendar__switch-left .ico { background: url('../img/icons-s46b12c3236.png') 0 -1621px no-repeat; width: 30px; height: 32px; margin-right: 10px; }
 .calendar__switch .calendar__switch-right { float: right; cursor: pointer; }
-.calendar__switch .calendar__switch-right .ico { background: url('../img/icons-sa2fba1dfd9.png') 0 -1223px no-repeat; width: 30px; height: 32px; margin-left: 10px; }
+.calendar__switch .calendar__switch-right .ico { background: url('../img/icons-s46b12c3236.png') 0 -1465px no-repeat; width: 30px; height: 32px; margin-left: 10px; }
 
 /*-------------------------  datepicker ------------------------- */
 @media only screen and (max-width: 500px) { .datepicker .ui-datepicker-group:nth-child(3) { display: none; }
@@ -391,9 +405,9 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { width: 30px; height: 32px; border: 1px solid #7bb3cb; background-color: #5199f3; position: absolute; top: 18px; padding: 0 5px; cursor: pointer; background-image: -moz-linear-gradient(#78c8f9, #2d6bef); background-image: -webkit-linear-gradient(#78c8f9, #2d6bef); background-image: linear-gradient(#78c8f9, #2d6bef); -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before { content: ""; position: absolute; top: 6px; }
 .ui-datepicker .ui-datepicker-prev { left: 26px; }
-.ui-datepicker .ui-datepicker-prev:before { background: url('../img/icons-sa2fba1dfd9.png') 0 0 no-repeat; width: 10px; height: 19px; left: 9px; }
+.ui-datepicker .ui-datepicker-prev:before { background: url('../img/icons-s46b12c3236.png') 0 0 no-repeat; width: 10px; height: 19px; left: 9px; }
 .ui-datepicker .ui-datepicker-next { right: 26px; }
-.ui-datepicker .ui-datepicker-next:before { background: url('../img/icons-sa2fba1dfd9.png') 0 -29px no-repeat; width: 10px; height: 19px; left: 10px; }
+.ui-datepicker .ui-datepicker-next:before { background: url('../img/icons-s46b12c3236.png') 0 -29px no-repeat; width: 10px; height: 19px; left: 10px; }
 .ui-datepicker .ui-datepicker-prev { top: 60px; left: 25px; }
 .ui-datepicker .ui-datepicker-prev:hover:after { text-decoration: none; color: black; }
 .ui-datepicker .ui-datepicker-prev:after { content: "Previous"; font-size: 14px; color: black; text-decoration: none; position: absolute; left: 40px; top: 7px; font-weight: normal; }
@@ -456,13 +470,13 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .slider__switch-left { left: 20px; }
 @media only screen and (max-width: 380px) { .slider__switch-left { left: 10px; } }
 @media only screen and (max-width: 450px) { .slider__switch-left { left: 10px; } }
-.slider__switch-left:before { background: url('../img/icons-sa2fba1dfd9.png') 0 0 no-repeat; width: 10px; height: 19px; left: 13px; }
+.slider__switch-left:before { background: url('../img/icons-s46b12c3236.png') 0 0 no-repeat; width: 10px; height: 19px; left: 13px; }
 .slider__switch-left .ico { left: 20px; }
 @media only screen and (max-width: 380px) { .slider__switch-left .ico { left: 10px; } }
 @media only screen and (max-width: 450px) { .slider__switch-left .ico { left: 10px; } }
 
 .slider__switch-right { right: 20px; }
-.slider__switch-right:before { right: 13px; background: url('../img/icons-sa2fba1dfd9.png') 0 -29px no-repeat; width: 10px; height: 19px; }
+.slider__switch-right:before { right: 13px; background: url('../img/icons-s46b12c3236.png') 0 -29px no-repeat; width: 10px; height: 19px; }
 .slider__switch-right .ico { right: 20px; }
 @media only screen and (max-width: 380px) { .slider__switch-right .ico { right: 10px; } }
 @media only screen and (max-width: 450px) { .slider__switch-right .ico { right: 10px; } }
@@ -526,13 +540,13 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 .slide__arrow-prev.disabled, .slide__arrow-next.disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 .slide__arrow-prev:before, .slide__arrow-next:before { content: ""; position: absolute; top: 14px; left: 13px; }
 
-.slide__arrow-prev:before { background: url('../img/icons-sa2fba1dfd9.png') 0 0 no-repeat; width: 10px; height: 19px; }
+.slide__arrow-prev:before { background: url('../img/icons-s46b12c3236.png') 0 0 no-repeat; width: 10px; height: 19px; }
 
 .slide__arrow-next { position: absolute; left: auto; right: 11px; }
 @media only screen and (max-width: 767px) { .slide__arrow-next { right: 19px; } }
 @media (min-width: 768px) { .slide__arrow-next { right: 19px; } }
 @media (min-width: 992px) { .slide__arrow-next { right: 11px; } }
-.slide__arrow-next:before { background: url('../img/icons-sa2fba1dfd9.png') 0 -29px no-repeat; width: 10px; height: 19px; left: 15px; }
+.slide__arrow-next:before { background: url('../img/icons-s46b12c3236.png') 0 -29px no-repeat; width: 10px; height: 19px; left: 15px; }
 
 .check__map { height: 212px; }
 @media only screen and (max-width: 500px) { .check__map { margin-left: 15px; } }
@@ -659,13 +673,13 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 
 .data__note { font-size: 18px; color: #504f4f; }
 
-.star { display: inline-block; background: url('../img/icons-sa2fba1dfd9.png') 0 -1841px no-repeat; width: 11px; height: 13px; vertical-align: middle; }
+.star { display: inline-block; background: url('../img/icons-s46b12c3236.png') 0 -2218px no-repeat; width: 11px; height: 13px; vertical-align: middle; }
 
-.star0 { background: url('../img/icons-sa2fba1dfd9.png') 0 -1864px no-repeat; width: 11px; height: 13px; display: inline-block; vertical-align: middle; }
+.star0 { background: url('../img/icons-s46b12c3236.png') 0 -2241px no-repeat; width: 11px; height: 13px; display: inline-block; vertical-align: middle; }
 
 .ico { display: inline-block; vertical-align: middle; }
 
-.i-eng { background: url('../img/icons-sa2fba1dfd9.png') 0 -1124px no-repeat; width: 16px; height: 11px; }
+.i-eng { background: url('../img/icons-s46b12c3236.png') 0 -1366px no-repeat; width: 16px; height: 11px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

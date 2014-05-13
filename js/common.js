@@ -12,6 +12,13 @@ $(document).ready(function () {
     });
   };
 
+  $(".building__gallery-wrap .building__media").click(function() {
+    var src = $(".slides").find(".active a").attr("href");
+    $(".building__media img").attr("src", src);
+    $(".slides").find(".active").removeClass("active").next().addClass("active");
+    return false;
+  });
+
   $(".building__gallery-wrap .slides a").click(function() {
     $(".building__media img").attr('src', $(this).attr('href'));
     $(this).parent().addClass('active').siblings().removeClass('active');
@@ -180,9 +187,6 @@ $(document).ready(function () {
     return false;
   });
 
-  $('.dropdown-menu a').click(function(event) {
-    $(this).parents('.input-group-btn').removeClass('open').prev().val($(this).text()).prev().val($(this).data('value'));
-    //$(this).parents('.dropdown-menu').hide();
-    return false;
-  });
+  
+
 });

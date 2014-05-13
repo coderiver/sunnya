@@ -433,7 +433,7 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 
 .calendar__description { *zoom: 1; }
 .calendar__description:after { content: " "; display: table; clear: both; }
-.calendar__description li { margin-right: 20px; float: left; position: relative; }
+.calendar__description li { margin-right: 10px; float: left; position: relative; }
 @media only screen and (max-width: 500px) { .calendar__description li { margin-bottom: 10px; } }
 .calendar__description li .ico { width: 31px; height: 31px; line-height: 31px; margin-right: 10px; font-size: 14px; color: #313131; display: inline-block; text-align: center; font-style: normal; }
 .calendar__description li.calendar__available .ico { background: #f3f3f3; border: 1px solid #a4a4a4; }

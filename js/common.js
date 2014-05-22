@@ -7,15 +7,29 @@ $(document).ready(function () {
   if ($('.building__gallery-wrap').exists()){
     $('.building__gallery-wrap .caro').scrollable({
       next:'.slide__arrow-next',
-      prev:'.slide__arrow-prev',
-      items: '.slides'
+      prev:'.slide__arrow-prev ',
+      items: '.slides li',
+      circular: true
     });
   };
 
   $(".building__gallery-wrap .building__media").click(function() {
     var src = $(".slides").find(".active a").attr("href");
     $(".building__media img").attr("src", src);
+
     $(".slides").find(".active").removeClass("active").next().addClass("active");
+
+
+    // if ($(this).parent().find(".slides li").next().length()){
+
+    // }
+    // else{
+
+    // }
+
+// $(this).parent().next().length()
+
+
     return false;
   });
 

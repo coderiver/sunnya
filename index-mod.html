@@ -65,8 +65,52 @@
 	 		google.maps.event.addDomListener(window, 'resize', initialize);
 	 		google.maps.event.addDomListener(window, 'load', initialize);
 	  </script>
+
+
+	  <style>
+
+	  .cycle-1 div { width:100%; }
+
+	  .cycle-2 .cycle-slide { border:3px solid #fff; }
+
+	  .cycle-2 .cycle-slide-active { border:3px solid #004; }
+
+	  .cycle-slideshow img { width: 100%; height: auto; display: block; }
+
+
+	  .slideshow-overlay {
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 15px;
+	    right: 0;
+	    z-index: 200;
+	  }
+	  </style>
+
+
+	  <script>
+	  jQuery(document).ready(function($){
+
+	    var slideshows = $('.cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
+	      slideshows.not(this).cycle('goto', opts.currSlide);
+	    });
+
+	    $('.cycle-2 .cycle-slide').click(function(){
+	      var index = $('.cycle-2').data('cycle.API').getSlideIndex(this);
+	      slideshows.cycle('goto', index);
+	    });
+
+	  });
+	  </script>
+
+
+
 </head>
 <body>
+
+
+
 	<!-- BEGIN  out-->
 	<div class="out">
 		<div class="bg bg_mod"></div>
@@ -98,7 +142,7 @@
 								<div class="dropdown dropdown_bl">
 								  <a data-toggle="dropdown" href="#"  class="btn btn_top btn_custum btn_dark"><i class="ico flag_de"></i></a>
 								  <ul class="dropdown-menu" role="menu">
-				<li>
+									<li>
                     <a href="/de/">
                         <img class="flag_de"  src="http://www.sunnyrentals.com/new_sr/images/transparent.png" alt="German"/>
                         <span class="ddTitleText">German</span>
@@ -192,68 +236,63 @@
 									<div class="row">
 										<div class="col-md-8 col-sm-12">
 											<div class="building">
-		  									<div class="building__gallery">
-													<div class="building__gallery-wrap">
-														<div class="building__photo">
-															<div class="building__media">
-																	<img src="http://images.sunnyrentals.com/userfiles/93540/property/587304/images/1380812810.9029_big.jpg">
-															</div>
-															<div class="building__thumbs">
-																<div class="caro">
-																	<ul class="slides">
-																		<li class="active">
-																			<a href="http://images.sunnyrentals.com/userfiles/93540/property/587304/images/1380812810.9029_big.jpg">
-																				<img src="http://placekitten.com/g/55/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://images.sunnyrentals.com/userfiles/93540/property/587304/images/1380812810.9029_big.jpg">
-																				<img src="http://placekitten.com/g/54/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://images.sunnyrentals.com/userfiles/93540/property/587304/images/1380812810.9029_big.jpg">
-																				<img src="http://placekitten.com/g/55/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://placekitten.com/g/604/403">
-																				<img src="http://placekitten.com/g/54/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://placekitten.com/g/605/403">
-																				<img src="http://placekitten.com/g/55/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://placekitten.com/g/604/403">
-																				<img src="http://placekitten.com/g/54/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://placekitten.com/g/605/403">
-																				<img src="http://placekitten.com/g/55/45">
-																			</a>
-																		</li>
-																		<li class="">
-																			<a href="http://placekitten.com/g/604/403">
-																				<img src="http://placekitten.com/g/54/45">
-																			</a>
-																		</li>
-																		<li>
-																			<a href="http://placekitten.com/g/605/403">
-																				<img src="http://placekitten.com/g/55/45">
-																			</a>
-																		</li>
-																	</ul>
-																</div>
-																<a class="slide__arrow-prev disabled"></a>
-																<a class="slide__arrow-next"></a>
-															</div>
-														</div>
-													</div>
-												</div>
+											  <div class="building__gallery">
+											    <div class="building__gallery-wrap">
+											      <div class="building__photo">
+											        <div class="building__media">
+											          <div id="slideshow-1">
+											            <div class="slideshow-overlay"></div>
+											              <div class="cycle-1 cycle-slideshow"
+											                data-cycle-slides="> div"
+											                data-cycle-timeout="0"
+											                data-cycle-next=".slideshow-overlay"
+											                data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}"
+											                data-cycle-fx="scrollHorz"
+											                >
+											                <div><img src="http://placekitten.com/g/605/403"></div>
+											                <div><img src="http://placekitten.com/g/604/403"></div>
+											                <div><img src="http://placekitten.com/g/603/403"></div>
+											                <div><img src="http://placekitten.com/g/602/403"></div>
+											                <div><img src="http://placekitten.com/g/601/403"></div>
+											                <div><img src="http://placekitten.com/g/605/403"></div>
+											                <div><img src="http://placekitten.com/g/604/403"></div>
+											                <div><img src="http://placekitten.com/g/603/403"></div>
+											                <div><img src="http://placekitten.com/g/602/403"></div>
+											              </div>
+											          </div>
+											        </div>
+											        <div class="building__thumbs">
+											          <div class="caro">
+											            <div class="slideshow-2">
+											              <div class="cycle-2 cycle-slideshow"
+											                data-cycle-slides="> div"
+											                data-cycle-timeout="0"
+											                data-cycle-prev=".slideshow-2 .slide__arrow-prev"
+											                data-cycle-next=".slideshow-2 .slide__arrow-next, .cycle-slide"
+											                data-cycle-caption=".slideshow-2 .custom-caption"
+											                data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}"
+											                data-cycle-fx="carousel"
+											                data-cycle-carousel-fluid=true
+											                data-allow-wrap="false"
+											                >
+												                <div><img src="http://malsup.github.io/images/beach1.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach2.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach3.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach4.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach5.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach6.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach7.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach8.jpg" width=100 height=100></div>
+												                <div><img src="http://malsup.github.io/images/beach9.jpg" width=100 height=100></div>
+											              </div>
+											              <a class="slide__arrow-prev"></a>
+											              <a class="slide__arrow-next"></a>
+											            </div>
+											          </div>
+											        </div>
+											      </div>
+											    </div>
+											  </div>
 											</div>
 										</div>
 										<div class="col-md-4 col-sm-12">
@@ -647,7 +686,7 @@
 										<div class="col-md-4">
 											<div class="slider__item-in">
 												<p class="slider__meta"><strong>Worth every Euro!</strong></p>
-												<p class="slider__rate"><img src="img/star2.jpg" alt=""><span>- Jean Costello, June 11 2012</span></p>
+												<p class="slider__rate"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star0"></i><i class="star0"></i><span>- Sunny, July 18 2012</span></p>
 												<p>Through enquiry, booking and finally staying at Windlenook the attention to detail that Eleanor & Mike give to their rental is excellent. We wanted for nothing whilst we stayed at the villa; it is equipped to a high standard with everything you will need ...plus some more. The location is superb and very peaceful; an ideal spot to chill out. There is also plenty to do and see in the area if you feel inclined.</p>
 												<a href="#" class="translate">Translate to Danish</a>
 											</div>

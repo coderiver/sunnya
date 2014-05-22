@@ -206,13 +206,17 @@ $(document).ready(function () {
   });
 
   $(document).on('click', function (e) {
-    if($('.input-group.is-active').length> 0){
-      console.log('popup is visible now');
+    console.log('click');
+    if($('.dp:visible').length> 0){
+      //console.log('popup is visible now');
+          //$('.dp3-wrap,.dp4-wrap,.dp3,.dp4').fadeOut();
+         //$('.dp3').fadeOut();
+          if ($(e.target).closest(".form-control").length === 0) {
+            $('.dp3-wrap,.dp4-wrap,.dp3,.dp4').fadeOut();
+            console.log('hideme');
+         }
     }
-    // if ($(e.target).closest(".dp").length === 0 && !($(e.target).hasClass('form-control'))) {
-    //     //$(".dp").hide();
-    //     console.log('hideme');
-    // }
+   
 });
 
   

@@ -73,6 +73,7 @@ $(document).ready(function () {
       var date17 = new Date(2014, 5, 14);
       var date18 = new Date(2014, 5, 22);
       $('.datepicker').datepicker({
+          minDate: 0,
           numberOfMonths: [3, 2],
           showButtonPanel: true,
           beforeShowDay: function (date) {
@@ -170,8 +171,10 @@ $(document).ready(function () {
          $( ".date3 input" ).val( selectedDate );
          $('.dp3-wrap').fadeOut();
          $('.dp3').fadeOut();
+          $( ".dp4" ).datepicker( "option", "minDate", selectedDate );
         }
       });
+      //$( ".dp3" ).datepicker({minDate: "17-06-2014"});
 
       $('.date4').on('click',function(){
         $('.dp4-wrap').fadeIn();
@@ -184,6 +187,7 @@ $(document).ready(function () {
          $( ".date4 input" ).val( selectedDate );
          $('.dp4-wrap').fadeOut();
          $('.dp4').fadeOut();
+         $( ".dp3" ).datepicker( "option", "maxDate", selectedDate );
         }
       });
     });
@@ -200,6 +204,16 @@ $(document).ready(function () {
     $(this).parents().find(".dp-wrap").hide();
     return false;
   });
+
+  $(document).on('click', function (e) {
+    if($('.input-group.is-active').length> 0){
+      console.log('popup is visible now');
+    }
+    // if ($(e.target).closest(".dp").length === 0 && !($(e.target).hasClass('form-control'))) {
+    //     //$(".dp").hide();
+    //     console.log('hideme');
+    // }
+});
 
   
 

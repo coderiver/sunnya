@@ -687,6 +687,13 @@ textarea.form-control { resize: vertical; font-weight: 400; color: #919191; bord
 
 .slideshow-overlay { position: absolute; top: 0; bottom: 0; left: 15px; right: 0; z-index: 200; }
 
+.dp-overlay { position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 10; display: none; }
+.dp-overlay.is-open { display: block; }
+
+.ui-datepicker-group { position: relative; }
+
+.ui-datepicker-prev, .ui-datepicker-next, .ui-datepicker-group { z-index: 1000; }
+
 .ico { display: inline-block; vertical-align: middle; }
 
 .i-eng { background: url('../img/icons-sda1989df2f.png') 0 -2044px no-repeat; width: 16px; height: 11px; }

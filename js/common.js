@@ -163,6 +163,7 @@ $(document).ready(function () {
       $('.date3').on('click',function(){
         $('.dp3-wrap').fadeIn();
         $('.dp3').fadeIn();
+        $('.dp-overlay').addClass("is-open");
       })
       $( ".dp3" ).datepicker({
         defaultDate: "+2w",
@@ -171,14 +172,26 @@ $(document).ready(function () {
          $( ".date3 input" ).val( selectedDate );
          $('.dp3-wrap').fadeOut();
          $('.dp3').fadeOut();
+          $('.dp-overlay').removeClass("is-open");
           $( ".dp4" ).datepicker( "option", "minDate", selectedDate );
         }
       });
       //$( ".dp3" ).datepicker({minDate: "17-06-2014"});
 
+      $('.dp-overlay').on('click',function(){
+
+        $('.dp3-wrap').fadeOut();
+        $('.dp3').fadeOut();
+
+        $('.dp4-wrap').fadeOut();
+        $('.dp4').fadeOut();
+      })
+
+
       $('.date4').on('click',function(){
         $('.dp4-wrap').fadeIn();
         $('.dp4').fadeIn();
+        $('.dp-overlay').addClass("is-open");
       })
       $( ".dp4" ).datepicker({
         defaultDate: "+2w",
@@ -187,6 +200,7 @@ $(document).ready(function () {
          $( ".date4 input" ).val( selectedDate );
          $('.dp4-wrap').fadeOut();
          $('.dp4').fadeOut();
+         $('.dp-overlay').removeClass("is-open");
          $( ".dp3" ).datepicker( "option", "maxDate", selectedDate );
         }
       });

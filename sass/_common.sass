@@ -1675,3 +1675,23 @@ textarea.form-control
 	left: 15px
 	right: 0
 	z-index: 200
+
+
+
+.dp-overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 10
+	display: none
+	&.is-open
+		display: block
+
+
+.ui-datepicker-group
+	position: relative
+.ui-datepicker-prev, .ui-datepicker-next, .ui-datepicker-group
+	z-index: 1000
+

@@ -214,9 +214,9 @@ $(document).ready(function () {
   });
   //
   $(".calendar-i").click(function () {
-    $(this).parents().find(".dp").hide();
-    $(this).parents().find(".dp-wrap").hide();
-    return false;
+    // $(this).parents().find(".dp").hide();
+    // $(this).parents().find(".dp-wrap").hide();
+    // return false;
   });
 
 //   $(document).on('click', function (e) {
